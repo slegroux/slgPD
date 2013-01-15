@@ -1,0 +1,32 @@
+#N canvas 755 428 304 253 10;
+#X declare -path . -path ../../lib;
+#X obj 3 1 cnv 15 300 250 empty empty empty 20 12 0 14 -66577 -66577
+0;
+#X obj 16 8 slg.sequencer;
+#X obj 19 254 score-editor;
+#X obj 21 185 bng 20 250 50 0 empty empty empty 0 -6 0 8 -258113 -1
+-1;
+#X text 19 167 START;
+#X msg 202 189 0;
+#X msg 84 190 1;
+#X msg 114 190 2;
+#X msg 144 190 3;
+#X obj 127 254 s section-start;
+#X text 82 170 START;
+#X text 201 169 STOP;
+#X msg 172 189 100;
+#X text 168 169 TEST;
+#X obj 230 19 vu 10 120 vu-in1 empty -1 -8 0 8 -66577 -1 0 0;
+#X text 225 142 IN;
+#X obj 257 19 vu 10 120 out2-VU empty -1 -8 0 8 -66577 -1 0 0;
+#X obj 281 19 vu 10 120 out4-VU empty -1 -8 0 8 -66577 -1 0 0;
+#X text 261 158 OUT;
+#X text 257 142 2;
+#X text 282 141 4;
+#X obj 20 276 declare -path . -path ../../lib;
+#X connect 3 0 2 0;
+#X connect 5 0 9 0;
+#X connect 6 0 9 0;
+#X connect 7 0 9 0;
+#X connect 8 0 9 0;
+#X connect 12 0 9 0;

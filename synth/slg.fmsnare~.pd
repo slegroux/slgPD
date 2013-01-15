@@ -1,0 +1,170 @@
+#N canvas 308 22 1073 750 10;
+#X obj 29 330 inlet;
+#X obj 310 96 r hub;
+#X obj 252 195 random 8;
+#X floatatom 233 232 5 0 0 0 - - -;
+#X obj 233 261 hradio 20 1 0 8 empty empty empty 0 -6 0 8 -262144 -1
+-1 5;
+#N canvas 58 22 702 645 presets 0;
+#X obj 46 -25 inlet;
+#X obj 46 6 pack f \$0;
+#X obj 30 613 print ..1;
+#X obj 137 613 print ..2;
+#X obj 245 613 print ..3;
+#X obj 30 583 r \$0-preset11;
+#X obj 137 583 r \$0-preset12;
+#X obj 245 583 r \$0-preset13;
+#X msg 296 87 \; \$1-preset11 0 \;;
+#X msg 180 88 \; \$1-preset11 1 \;;
+#X obj 46 35 route 0 1 2 3 4 5 6 7;
+#X msg 170 132 \; \$1-preset12 0.33 28.51 0.06 78.42 0.06 206.72 0
+399.19 0.09 146.04 0 4151.24 0.17 2603.32 0 22840.4 0.02 66617.6 0
+26646.6 0.05 1.27667e+06 0 3.98702e+06 0.02 3.59156e+06 0 \; \$1-preset13
+10.88 49.9 3.75 71.28 0 655.82 24 1255.89 0.38 830.03 6.75 10460.6
+1.88 83747.9 0 79940.6 3.75 289514 0 900124 1.5 2.37898e+06 3.38 1.44405e+06
+0 823750 6 2.96554e+06 0 \;;
+#X msg 152 159 \; \$1-preset12 0.25 28.51 0.05 57.03 0.02 64.16 0.02
+98.77 0 610.41 0 4151.24 0.17 2603.32 0 22840.4 0.02 66617.6 0 26646.6
+0.05 1.27667e+06 0 3.98702e+06 0.02 3.59156e+06 0 \; \$1-preset13 10.88
+49.9 3.75 71.28 0 1911.71 0.38 830.03 6.75 10460.6 1.88 83747.9 0 79940.6
+3.75 289514 0 900124 1.5 2.37898e+06 3.38 1.44405e+06 0 823750 6 2.96554e+06
+0 \;;
+#X msg 134 184 \; \$1-preset12 0.27 14.26 0.13 29.02 0 123.23 0.02
+92.39 0.08 73.1 0 \; \$1-preset13 20.63 14.26 8.25 27.98 1.5 73.52
+3.38 44.64 0 25.45 6 85.23 0 60.92 0.38 \;;
+#X msg 117 205 \; \$1-preset12 0.22 18.35 0.13 27.52 0.02 229.36 0
+309.3 0 415.47 0 215.87 0 221.07 0 1011.1 0 14688.3 0 19992.3 0.03
+7344.1 0 255716 0 854661 0.02 769890 0 \; \$1-preset13 24 0 17.63 14.26
+1.88 96.27 0 414.51 2.63 580.3 1.5 1077.7 4.13 221.07 0 451.94 1.88
+17952.3 0 19584.4 0.75 59612.3 0 192951 1.5 509962 3.38 309552 0 176580
+6 635690 0;
+#X msg 69 263 \; \$1-preset12 0.31 21.39 0 99.79 0 41.27 0.02 355.37
+0 142.14 0.05 6810.25 0 21268.3 0.02 19158.8 0 \; \$1-preset13 6.38
+213.85 0 303.97 0 426.43 3.75 1544.38 0 4801.58 1.5 12690.4 3.38 7703.1
+0 4394.2 6 15819.4 0 \;;
+#X msg 48 313 \; \$1-preset12 0.25 14.26 0.02 213.85 0.02 85.15 0 249.89
+0 156.82 0 42.77 0.03 490.31 0.02 2741.06 0 1096.42 0.05 52530.1 0
+164050 0.02 \; \$1-preset13 20.63 14.26 10.5 533.95 1.88 3445.9 0 3289.27
+3.75 11912.3 0 37036.4 1.5 97885.9 3.38 59417 0 33894 6 122021 0;
+#X msg 28 471 \; \$1-preset12 0.34 14.26 0.06 14.12 0 78.55 0.05 2.27
+0.02 275.74 0 392.06 0 \; \$1-preset13 16.88 42.77 15.38 33.15 3.38
+88.03 0 128.32 4.88 377.8 0;
+#X msg 32 425 \; \$1-preset12 0.39 8.21 0.19 20.17 0 80.82 0.02 72.79
+0 \; \$1-preset13 20.63 27.7 1.5 48.22 3.38 29.27 0 16.7 6 60.1 0;
+#X text 208 34 fmsna presets;
+#X connect 0 0 1 0;
+#X connect 1 0 10 0;
+#X connect 10 0 8 0;
+#X connect 10 0 18 0;
+#X connect 10 1 8 0;
+#X connect 10 1 17 0;
+#X connect 10 2 8 0;
+#X connect 10 2 16 0;
+#X connect 10 3 15 0;
+#X connect 10 4 9 0;
+#X connect 10 4 14 0;
+#X connect 10 5 8 0;
+#X connect 10 5 13 0;
+#X connect 10 6 8 0;
+#X connect 10 6 12 0;
+#X connect 10 7 11 0;
+#X restore 233 292 pd presets;
+#X floatatom 44 420 5 0 0 0 - - -;
+#X obj 44 442 sig~;
+#X floatatom 141 420 5 0 0 0 - - -;
+#X obj 141 442 sig~;
+#X obj 46 506 *~;
+#X obj 29 535 *~;
+#X text 77 441 carrier;
+#X obj 310 120 * 512;
+#X obj 252 113 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X text 308 31 1/0;
+#X obj 263 69 r \$0-preset11;
+#X obj 252 171 del 0;
+#X obj 252 144 metro 500;
+#X msg 214 195 4;
+#X obj 44 369 r blinblin;
+#X msg 141 395 709;
+#X obj 44 395 mtof;
+#N canvas 104 224 521 548 functions 0;
+#X obj 42 288 outlet;
+#X obj 245 288 outlet;
+#X text 159 259 fmod;
+#X text 356 259 amp;
+#X obj 158 28 * 7.77;
+#X floatatom 158 56 5 0 0 0 - - -;
+#X text 201 55 dur;
+#X obj 44 144 envgen 150 100 1 0  ;
+#X msg 158 83 duration \$1;
+#X obj 247 144 envgen 150 100 1 0  ;
+#X obj 96 91 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X text 436 197 fmsna;
+#X obj 143 -45 inlet;
+#X obj 61 -43 inlet;
+#X obj 248 -46 inlet;
+#X obj 22 -40 inlet;
+#X connect 4 0 5 0;
+#X connect 5 0 8 0;
+#X connect 7 0 0 0;
+#X connect 8 0 7 0;
+#X connect 8 0 9 0;
+#X connect 9 0 1 0;
+#X connect 10 0 7 0;
+#X connect 10 0 9 0;
+#X connect 12 0 7 0;
+#X connect 13 0 4 0;
+#X connect 14 0 9 0;
+#X connect 15 0 10 0;
+#X restore 237 369 pd functions;
+#X obj 237 442 line~;
+#X obj 316 488 line~;
+#X obj 45 472 simpleFM~ ------------------;
+#X obj 214 69 t b b;
+#X obj 214 31 r strtbang-5;
+#X obj 141 369 r strtbang-6;
+#X obj 246 326 r hub;
+#X obj 407 325 r \$0-preset12;
+#X obj 303 324 r \$0-preset13;
+#X obj 203 322 r sna;
+#X obj 139 567 ezdac~;
+#X obj 29 561 outlet~;
+#X obj 179 283 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X connect 0 0 11 0;
+#X connect 1 0 13 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 6 0 7 0;
+#X connect 7 0 26 0;
+#X connect 8 0 9 0;
+#X connect 9 0 26 1;
+#X connect 10 0 11 1;
+#X connect 11 0 35 0;
+#X connect 11 0 34 0;
+#X connect 11 0 34 1;
+#X connect 13 0 18 1;
+#X connect 14 0 18 0;
+#X connect 16 0 14 0;
+#X connect 17 0 2 0;
+#X connect 18 0 17 0;
+#X connect 19 0 3 0;
+#X connect 20 0 22 0;
+#X connect 21 0 8 0;
+#X connect 22 0 6 0;
+#X connect 23 0 24 0;
+#X connect 23 1 25 0;
+#X connect 24 0 26 2;
+#X connect 25 0 10 1;
+#X connect 26 0 10 0;
+#X connect 27 0 19 0;
+#X connect 27 1 14 0;
+#X connect 28 0 27 0;
+#X connect 29 0 21 0;
+#X connect 30 0 23 1;
+#X connect 31 0 23 3;
+#X connect 32 0 23 2;
+#X connect 33 0 23 1;
+#X connect 36 0 23 0;

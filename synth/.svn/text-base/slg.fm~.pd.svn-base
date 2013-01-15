@@ -1,0 +1,56 @@
+#N canvas 309 340 340 427 10;
+#X obj 12 295 osc~;
+#X obj 27 202 osc~;
+#X obj 12 269 +~;
+#X text 67 167 Fm;
+#X text 143 198 Modulation Depth;
+#X obj 7 4 comment 0 20 Times ? 0 255 128 0 FM Synthesizer;
+#X obj 13 62 comment 0 14 Helvetica ? 0 0 128 128 Fc;
+#X obj 104 29 comment 0 14 Helvetica ? 0 0 128 128 Harmonicity Ratio
+;
+#X obj 196 50 comment 0 14 Helvetica ? 0 0 128 128 Modulation Index
+;
+#X text 108 64 Fm/Fc;
+#X text 163 62 Am/Fm;
+#X obj 12 322 *~;
+#X obj 12 350 hip~ 5;
+#X obj 165 80 inlet;
+#X obj 64 81 inlet;
+#X text 53 52 Amplitude;
+#X obj 12 377 outlet~;
+#X obj 108 82 inlet;
+#X obj 13 81 inlet;
+#X obj 27 229 *~;
+#X obj 108 373 import maxlib;
+#X obj 112 121 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 179 124 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 76 293 line~ 0.3;
+#X obj 76 269 pack f 50;
+#X floatatom 134 240 5 0 0 0 - - -;
+#X obj 110 196 *~;
+#X obj 214 132 line~;
+#X obj 27 166 *~;
+#X obj 65 323 line~;
+#X connect 0 0 11 0;
+#X connect 1 0 19 0;
+#X connect 2 0 0 0;
+#X connect 11 0 12 0;
+#X connect 12 0 16 0;
+#X connect 13 0 22 0;
+#X connect 13 0 27 0;
+#X connect 14 0 24 0;
+#X connect 14 0 29 0;
+#X connect 17 0 21 0;
+#X connect 17 0 28 1;
+#X connect 18 0 2 0;
+#X connect 18 0 28 0;
+#X connect 19 0 2 1;
+#X connect 24 0 23 0;
+#X connect 25 0 24 1;
+#X connect 26 0 19 1;
+#X connect 27 0 26 1;
+#X connect 28 0 1 0;
+#X connect 28 0 26 0;
+#X connect 29 0 11 1;

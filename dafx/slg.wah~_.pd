@@ -1,0 +1,21 @@
+#N canvas 0 22 450 300 10;
+#X obj 64 169 slg.wah~;
+#X obj 101 101 cnv 15 98 38 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#X obj 110 113 tgl 20 0 empty empty empty 0 -6 0 8 -258113 -1 -1 0
+1;
+#X obj 167 120 bng 15 250 50 0 empty empty empty 17 7 0 10 -260097
+-1 -1;
+#X text 137 114 Wah;
+#X text 162 102 beat;
+#X obj 129 200 outlet~;
+#X obj 66 201 outlet~;
+#X obj 50 68 inlet~;
+#X obj 95 69 inlet~;
+#X connect 0 0 7 0;
+#X connect 0 1 6 0;
+#X connect 2 0 0 3;
+#X connect 3 0 0 2;
+#X connect 8 0 0 0;
+#X connect 9 0 0 1;
+#X coords 0 -1 1 1 100 40 1 100 100;

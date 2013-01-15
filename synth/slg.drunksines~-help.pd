@@ -1,0 +1,10 @@
+#N canvas 684 69 259 358 10;
+#N canvas 673 234 642 254 sines 0;
+#X restore 65 72 pd sines;
+#X obj 32 134 drunk_sines;
+#X obj 35 241 ezdac~;
+#X obj 38 24 slg.midiseq;
+#X connect 1 0 2 0;
+#X connect 1 1 2 1;
+#X connect 3 0 1 1;
+#X connect 3 1 1 2;

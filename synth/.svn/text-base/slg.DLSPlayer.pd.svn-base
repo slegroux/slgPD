@@ -1,0 +1,273 @@
+#N canvas 270 22 997 648 10;
+#X obj 187 272 makenote \$1 \$2;
+#X obj 132 319 noteout \$3;
+#X floatatom 187 76 5 0 0 0 - - -;
+#X floatatom 340 71 5 0 0 0 - - -;
+#X obj 187 50 inlet;
+#X obj 290 50 inlet;
+#X obj 340 50 inlet;
+#X text 185 30 Note;
+#X text 61 340 Think about poly for managing midi voices;
+#X text 20 100 <slegroux@iua.upf.edu>;
+#X obj 441 50 inlet;
+#X floatatom 56 174 5 0 0 0 - - -;
+#X obj -2 240 + 60;
+#X obj -2 218 random 24;
+#X obj 505 353 r \$0-midi-channel-s;
+#X obj -2 152 r \$0-test-s;
+#X obj 441 79 s \$0-volume-r;
+#X obj -2 192 metro 300;
+#X obj 395 49 inlet;
+#X obj 234 152 s \$0-program-change-r;
+#X text 440 32 Volume;
+#X obj 234 132 s \$0-midi-channel-r;
+#X obj 451 271 hsl 64 10 0 127 0 0 \$0-velocity-s \$0-velocity-r empty
+-2 -6 0 8 -106458 -1 -1 0 1;
+#X obj 268 251 r \$0-duration-s;
+#X obj 234 113 s \$0-duration-r;
+#X obj 235 92 s \$0-velocity-r;
+#X obj 227 229 r \$0-velocity-s;
+#X floatatom 235 75 5 0 0 0 - - -;
+#X obj 235 51 inlet;
+#X text 228 31 Velocity;
+#X text 448 256 Velocity;
+#X msg 83 235 90;
+#X obj -2 262 t f b;
+#N canvas 780 22 488 506 canvas-management 0;
+#X msg 95 169 label <;
+#X obj 21 18 loadbang;
+#X obj 93 46 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 93 74 sel 1 0;
+#X msg 49 131 label >;
+#X msg 89 101 size 1 15 \, vis_size 1 15 \, label;
+#X obj 82 280 s \$0-hider-r;
+#X obj 93 19 r \$0-hide-on-s;
+#X obj 49 211 s \$0-hide-on-r;
+#X msg 89 254 vis_size 150 15 \, size 15 15 \, label SIMPLE_DLS_SYNTH
+;
+#X obj 22 334 s \$0-main-canvas-r;
+#X msg 22 307 vis_size 150 65 \, size 15 15 \, label;
+#X obj 26 454 s \$0-test-r;
+#X msg 26 420 label >;
+#X msg 91 421 label X;
+#X obj 26 366 r \$0-test-s;
+#X obj 26 392 sel 0 1;
+#X connect 0 0 8 0;
+#X connect 1 0 4 0;
+#X connect 1 0 9 0;
+#X connect 1 0 11 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 3 0 0 0;
+#X connect 3 1 9 0;
+#X connect 3 1 4 0;
+#X connect 4 0 8 0;
+#X connect 5 0 6 0;
+#X connect 7 0 2 0;
+#X connect 9 0 6 0;
+#X connect 11 0 10 0;
+#X connect 13 0 12 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 13 0;
+#X connect 16 1 14 0;
+#X restore 448 238 pd canvas-management;
+#X text 0 87 (c) 2007::Sylvain Le Groux;
+#X obj 1 14 cnv 15 150 65 empty \$0-main-canvas-r empty 5 7 0 12 -233017
+-66577 0;
+#N canvas 5 161 233 365 midi-controls 0;
+#X obj 90 118 r \$0-midi-channel-s;
+#X obj 18 140 ctlout 1 \$3;
+#X text 121 144 Modulation Wheel;
+#X obj 98 203 r \$0-midi-channel-s;
+#X obj 19 223 ctlout 7 \$3;
+#X obj 98 281 r \$0-midi-channel-s;
+#X obj 19 301 ctlout 10 \$3;
+#X text 122 305 Pan position;
+#X text 122 227 Volume;
+#X obj 71 38 r \$0-midi-channel-s;
+#X obj 20 60 pgmout 1;
+#X connect 0 0 1 2;
+#X connect 3 0 4 2;
+#X connect 5 0 6 2;
+#X connect 9 0 10 1;
+#X restore 448 218 pd midi-controls;
+#X obj 4 21 nbx 2 14 1 16 0 0 \$0-midi-channel-s \$0-midi-channel-r
+empty 0 -6 0 10 -106458 -1 -1 2 256;
+#X obj 4 40 nbx 3 14 1 128 0 0 \$0-program-change-s \$0-program-change-r
+empty 0 -6 0 10 -106458 -1 -1 1 256;
+#X obj 35 62 tgl 12 0 \$0-test-s \$0-test-r X 4 7 1 9 -259674 -1 -1
+0 1;
+#X text 32 21 Ch;
+#X obj 99 37 hsl 48 10 100 1000 0 0 \$0-duration-s \$0-duration-r empty
+-2 -6 0 8 -106458 -1 -1 2089 1;
+#X obj 99 52 hsl 48 10 0 127 0 0 \$0-modulation-s \$0-modulation-r
+empty -2 -6 0 8 -106458 -1 -1 0 1;
+#X obj 100 22 hsl 48 10 0 127 0 0 \$0-volume-s \$0-volume-r empty -2
+-6 0 8 -106458 -1 -1 3331 1;
+#X text 104 20 Volume;
+#X obj 8 61 knob 15 15 0 127 0 0 \$0-pan-s \$0-pan-r empty 0 -8 192
+8 -106458 -4033 -1 706 1;
+#X obj 1 1 cnv 15 150 15 empty \$0-hider-r SIMPLE_DLS_SYNTH 3 9 1 9
+-104064 -262144 0;
+#X obj 135 1 bng 15 250 50 0 \$0-hide-on-s \$0-hide-on-r > 5 8 0 8
+-104064 -104064 -262144;
+#X text 64 137 Pan;
+#X floatatom 68 300 5 0 0 0 - - -;
+#N canvas 320 464 657 249 initialization 0;
+#X obj 47 49 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 69 18 r \$0-reset-s;
+#X obj 12 18 loadbang;
+#X obj 12 69 float \$0;
+#X msg 12 93 \; \$1-volume-r 90 \; \$1-duration-r 500 \; \$1-modulation-r
+0 \; \$1-pan-r 64 \; \$1-velocity-r 90 \; \$1-midi-channel-r 1 \; \$1-program-change-r
+1 \;;
+#X obj 231 127 print using;
+#X msg 231 92 slg.DLSplayer (c) 2007 Sylvain Le Groux <slegroux@iua.upf.edu>
+;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 2 0 6 0;
+#X connect 3 0 4 0;
+#X connect 6 0 5 0;
+#X restore 448 198 pd initialization;
+#X obj 137 65 bng 12 250 50 0 \$0-reset-s empty empty 0 -6 0 8 -259712
+-1 -1;
+#X text 99 62 Reset;
+#X obj 2 524 print list;
+#X msg 112 426 rewind;
+#X msg 112 446 bang;
+#X msg 112 467 clear;
+#X obj 70 524 print done;
+#N canvas 0 22 458 308 osc-control 0;
+#X restore 448 291 pd osc-control;
+#X obj 494 50 inlet;
+#X obj 443 99 s \$0-modulation-r;
+#X text 340 32 MIDI ch.;
+#X text 296 32 Dur.;
+#X text 405 32 PC;
+#X obj 540 49 inlet;
+#X text 542 31 Pan;
+#X obj 444 121 s \$0-pan-r;
+#X text 491 31 Mod.;
+#X text 195 7 Inputs are sent to GUI that send values to pd guts;
+#X obj 666 47 inlet;
+#X text 667 28 OSC;
+#X msg 2 401 read generalmidilist.txt cr \, rewind \;;
+#X symbolatom 58 574 10 0 0 0 - - -;
+#X obj 1 550 unpack f s;
+#X floatatom 1 576 5 0 0 0 - - -;
+#X obj 2 496 textfile;
+#X text 68 354 Give Name of instrument?;
+#X obj 84 22 vsl 9 40 0 127 0 0 \$0-pitch-bend-s \$0-pitch-bend-r empty
+-5 -8 1 9 -106458 -1 -1 2700 1;
+#X text 99 34 Dur.;
+#X text 104 50 Mod.;
+#X text 81 65 PB;
+#X obj 587 50 inlet;
+#X obj 444 141 s \$0-pitch-bend-r;
+#X text 584 31 Pitch bend;
+#X obj 666 105 s \$0-midi-channel-r;
+#X obj 692 131 s \$0-program-change-r;
+#X obj 723 189 s \$0-volume-r;
+#X floatatom 841 112 5 0 0 0 - - -;
+#X obj 723 164 maxlib/scale 0 1 0 127;
+#X obj 666 77 OSCroute /channel /program /volume /articulation;
+#X obj 750 215 s \$0-duration-r;
+#X obj 436 563 midiformat 5;
+#X text 517 564 arg is channelnumber;
+#X obj 436 588 midiout;
+#X obj 436 474 pack f f;
+#X obj 537 521 r \$0-pitch-bend-s;
+#X floatatom 537 549 5 0 0 0 - - -;
+#X obj 470 330 r \$0-program-change-s;
+#X obj 523 378 r \$0-modulation-s;
+#X obj 523 403 pack f 1;
+#X obj 531 427 r \$0-volume-s;
+#X obj 531 450 pack f 7;
+#X obj 533 473 r \$0-pan-s;
+#X text 25 40 PC;
+#X obj 533 498 pack f 10;
+#X symbolatom 51 61 4 0 0 0 - - -;
+#X floatatom 334 291 5 0 0 0 - - -;
+#X obj 333 314 maxlib/pitch;
+#X msg 705 256 options AcousticGrandPiano BrightAcousticPiano ElectricGrandPiano
+HonkyTongPiano ElectricPiano1 ElectricPiano2 Harpsichord Clavi Celesta
+Glockenspiel MusicBox Vibraphone Marimba Xylophone TubularBells Dulcimer
+DrawbarOrgan PercussiveOrgan RockOrgan ChurchOrgan ReedOrgan Accordion
+Harmonica TangoAccordion NylonGuitar SteelGuitar JazzGuitar CleanGuitar
+MutedGuitar OverdrivenGuitar DistortionGuitar GuitarHarmonics AcousticBass
+ElectricBassFinger ElectricBassPick FretlessBass;
+#X obj 50 25 popup 30 25 #ffffff popup AcousticGrandPiano BrightAcousticPiano
+ElectricGrandPiano HonkyTongPiano ElectricPiano1 ElectricPiano2 Harpsichord
+Clavi Celesta Glockenspiel MusicBox Vibraphone Marimba Xylophone TubularBells
+Dulcimer DrawbarOrgan PercussiveOrgan RockOrgan ChurchOrgan ReedOrgan
+Accordion Harmonica TangoAccordion NylonGuitar SteelGuitar JazzGuitar
+CleanGuitar MutedGuitar OverdrivenGuitar DistortionGuitar GuitarHarmonics
+AcousticBass ElectricBassFinger ElectricBassPick FretlessBass;
+#X obj 704 437 + 1;
+#X obj 706 465 s \$0-program-change-r;
+#X connect 0 0 94 0;
+#X connect 0 0 106 0;
+#X connect 0 1 1 1;
+#X connect 0 1 94 1;
+#X connect 2 0 0 0;
+#X connect 3 0 21 0;
+#X connect 4 0 2 0;
+#X connect 5 0 24 0;
+#X connect 6 0 3 0;
+#X connect 10 0 16 0;
+#X connect 11 0 17 1;
+#X connect 12 0 32 0;
+#X connect 13 0 12 0;
+#X connect 14 0 91 6;
+#X connect 15 0 17 0;
+#X connect 17 0 13 0;
+#X connect 18 0 19 0;
+#X connect 23 0 0 2;
+#X connect 26 0 0 1;
+#X connect 27 0 25 0;
+#X connect 28 0 27 0;
+#X connect 31 0 0 1;
+#X connect 32 0 0 0;
+#X connect 32 0 49 0;
+#X connect 32 1 31 0;
+#X connect 54 0 75 0;
+#X connect 55 0 75 0;
+#X connect 56 0 75 0;
+#X connect 59 0 60 0;
+#X connect 64 0 66 0;
+#X connect 69 0 89 0;
+#X connect 71 0 75 0;
+#X connect 73 0 74 0;
+#X connect 73 1 72 0;
+#X connect 75 0 53 0;
+#X connect 75 0 73 0;
+#X connect 75 1 57 0;
+#X connect 81 0 82 0;
+#X connect 88 0 86 0;
+#X connect 89 0 84 0;
+#X connect 89 1 85 0;
+#X connect 89 2 87 0;
+#X connect 89 2 88 0;
+#X connect 89 3 90 0;
+#X connect 91 0 93 0;
+#X connect 94 0 91 0;
+#X connect 95 0 91 5;
+#X connect 95 0 96 0;
+#X connect 97 0 91 3;
+#X connect 98 0 99 0;
+#X connect 99 0 91 2;
+#X connect 100 0 101 0;
+#X connect 101 0 91 2;
+#X connect 102 0 104 0;
+#X connect 104 0 91 2;
+#X connect 106 0 107 0;
+#X connect 107 1 105 0;
+#X connect 108 0 109 0;
+#X connect 109 0 110 0;
+#X connect 110 0 111 0;
+#X coords 0 -1 1 1 152 80 1 0 0;

@@ -1,0 +1,19 @@
+#N canvas 743 312 367 324 10;
+#X obj 109 107 slg.freepaf~;
+#X obj 109 142 ezdac~;
+#X obj 98 25 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5100 0;
+#X obj 136 47 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3400 0;
+#X obj 180 71 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 900 1;
+#X text 16 15 fundamental;
+#X text 14 30 (MIDI units);
+#X text 270 27 center;
+#X text 269 42 freq.;
+#X text 221 89 bandwidth;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 2 0 0 0;
+#X connect 3 0 0 1;
+#X connect 4 0 0 2;

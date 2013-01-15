@@ -1,0 +1,39 @@
+#N canvas 985 22 343 535 10;
+#X obj 95 96 slg.phasorbank~;
+#X obj 94 134 ezdac~;
+#X floatatom 38 -155 5 0 0 0 - - -;
+#X text 34 -179 cfreq;
+#X obj 79 -155 mtof;
+#X msg 79 -183 60;
+#X msg 110 -181 62;
+#X msg 144 -180 66;
+#X obj 178 -187 vsl 15 128 0 0.25 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 700 1;
+#X obj 192 7 /;
+#X obj 182 57 +;
+#X obj 192 28 t b f;
+#X obj 192 -20 t b f;
+#X obj 237 -187 vsl 15 128 1 32 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 12700 1;
+#X obj 212 -187 vsl 15 128 1 32 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 8900 1;
+#X text 147 -238 phasor-shift;
+#X text 211 -217 phase-ratio;
+#X floatatom 220 93 5 0 0 0 - - -;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 2 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 0;
+#X connect 7 0 4 0;
+#X connect 8 0 10 0;
+#X connect 9 0 11 0;
+#X connect 10 0 0 1;
+#X connect 10 0 17 0;
+#X connect 11 0 10 0;
+#X connect 11 1 10 1;
+#X connect 12 0 9 0;
+#X connect 12 1 9 1;
+#X connect 13 0 9 0;
+#X connect 14 0 12 0;

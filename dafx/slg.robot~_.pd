@@ -1,0 +1,25 @@
+#N canvas 348 22 454 296 10;
+#X obj 101 101 cnv 15 98 38 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#X obj 104 111 tgl 20 0 empty empty empty 0 -6 0 8 -258113 -1 -1 0
+1;
+#X text 160 100 beat;
+#X obj 83 225 slg.robot~;
+#X text 124 112 Robot;
+#X obj 159 116 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-260097 -1 -1 0 256;
+#X obj 43 104 inlet~;
+#X obj 65 46 inlet~;
+#X obj 84 257 outlet~;
+#X obj 140 258 outlet~;
+#X text 203 114 ->>change pitch randomly on the beat;
+#X obj 17 180 r~ input1;
+#X connect 1 0 3 3;
+#X connect 3 0 8 0;
+#X connect 3 1 9 0;
+#X connect 5 0 3 2;
+#X connect 6 0 3 0;
+#X connect 7 0 3 1;
+#X connect 11 0 3 1;
+#X connect 11 0 3 0;
+#X coords 0 -1 1 1 100 40 1 100 100;

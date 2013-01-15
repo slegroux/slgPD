@@ -1,0 +1,10 @@
+#N canvas 0 22 454 304 10;
+#X obj 35 54 any2list;
+#X obj 35 75 symbol2list;
+#X obj 35 99 unpack f;
+#X obj 35 25 inlet;
+#X obj 35 126 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 0 0;

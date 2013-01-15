@@ -1,0 +1,70 @@
+#N canvas 49 22 494 506 10;
+#X obj 101 101 cnv 15 150 38 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X floatatom 126 179 5 0 0 2 red - -;
+#X floatatom 160 330 0 0 0 2 center_freq - -;
+#X msg 113 308 clear;
+#X obj 128 369 bp~ 100 10;
+#X floatatom 217 347 0 0 0 2 Q - -;
+#X obj 6 242 spigot~;
+#X obj 111 119 tgl 15 0 empty empty empty 0 -6 0 8 -4034 -1 -1 0 1
+;
+#X obj 254 219 * 10;
+#X obj 126 216 * 10;
+#X obj 191 217 * 10;
+#X obj 160 240 *;
+#X obj 6 198 inlet~;
+#X obj 128 443 outlet~;
+#X text 2 180 sound in;
+#X text 125 461 sound out;
+#X text 68 216 turn it on;
+#X obj 160 266 * 20;
+#X obj 7 416 env~;
+#X floatatom 7 440 5 0 0 0 - - -;
+#X obj 54 416 env~;
+#X floatatom 54 440 5 0 0 0 - - -;
+#X obj 160 294 + 700;
+#X text 19 487 fletcher munson (equal loudness countour);
+#X text 21 507 equal loudness;
+#X obj 148 108 knob 24 24 0 1 0 0 empty empty empty 0 -8 0 8 -258113
+-258113 -258113 0 1;
+#X obj 186 108 knob 24 24 0 1 0 0 empty empty empty 0 -8 0 8 -258113
+-4034 -258113 0 1;
+#X obj 223 109 knob 24 24 0 1 0 0 empty empty empty 0 -8 0 8 -4160
+-4160 -258113 0 1;
+#X floatatom 191 179 5 0 0 0 - - -;
+#X floatatom 254 178 5 0 0 0 - - -;
+#X text 105 101 ON/BP;
+#X obj 236 195 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 162 197 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X connect 1 0 9 0;
+#X connect 2 0 4 1;
+#X connect 3 0 4 0;
+#X connect 4 0 13 0;
+#X connect 5 0 4 2;
+#X connect 6 0 13 0;
+#X connect 6 0 18 0;
+#X connect 6 1 4 0;
+#X connect 6 1 20 0;
+#X connect 7 0 6 1;
+#X connect 8 0 17 1;
+#X connect 9 0 11 0;
+#X connect 10 0 11 1;
+#X connect 11 0 17 0;
+#X connect 12 0 6 0;
+#X connect 17 0 22 0;
+#X connect 18 0 19 0;
+#X connect 20 0 21 0;
+#X connect 22 0 2 0;
+#X connect 25 0 1 0;
+#X connect 26 0 28 0;
+#X connect 27 0 29 0;
+#X connect 28 0 10 0;
+#X connect 28 0 32 0;
+#X connect 29 0 8 0;
+#X connect 29 0 31 0;
+#X connect 31 0 1 0;
+#X connect 32 0 1 0;
+#X coords 0 -1 1 1 152 40 1 100 100;

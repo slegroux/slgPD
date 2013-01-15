@@ -1,0 +1,52 @@
+8
+
+dir
+635
+https://iua-share.upf.es/svn/specs_presenccia/Musebot/automation
+https://iua-share.upf.es/svn/specs_presenccia
+
+
+
+2008-02-15T13:23:54.672647Z
+562
+slegroux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+03aa3ccb-cf21-0410-be8c-d5f8be373799
+
+slg.t-rect.pd
+file
+
+
+
+
+2008-03-19T17:25:03.000000Z
+089a96ddaf8ea78ca48779f65582ca68
+2008-02-15T13:23:54.672647Z
+562
+slegroux
+
+slg.t-circle.pd
+file
+
+
+
+
+2008-03-19T17:25:03.000000Z
+d13a49343610394894a56e4fbd47c230
+2008-02-15T13:23:54.672647Z
+562
+slegroux
+

@@ -1,0 +1,58 @@
+#N canvas 162 28 928 602 10;
+#X obj -144 89 slg.sigmundanalysis~;
+#X obj 205 294 bng 40 250 50 0 empty empty empty 0 -6 0 10 -258113
+-1 -1;
+#X obj 205 76 slg.bonkers;
+#X obj 65 -94 slg.loadsample~;
+#X obj -144 246 slg.lbyl;
+#X obj 65 -40 send~ audioinput;
+#X obj -144 67 receive~ audioinput;
+#X obj 205 54 receive~ audioinput;
+#X obj -40 -85 comment 0 20 Times ? 0 255 128 0 INPUT;
+#X obj -63 -62 comment 0 14 Helvetica ? 0 0 128 128 Load Wav Sample
+;
+#X obj -267 102 comment 0 20 Times ? 0 255 128 0 ANALYSIS;
+#X obj -263 148 comment 0 14 Helvetica ? 0 0 128 128 Analyses Pitch
+;
+#X obj -272 189 comment 0 14 Helvetica ? 0 0 128 128 Sinusoidal Tracks
+;
+#X obj 82 125 comment 0 14 Helvetica ? 0 0 128 128 Onset Detection
+;
+#X obj -251 168 comment 0 14 Helvetica ? 0 0 128 128 Enveloppe;
+#X obj 287 -68 adc~;
+#X obj 267 -91 comment 0 14 Helvetica ? 0 0 128 128 Line input;
+#X obj 288 -38 send~ audioinput;
+#X obj 16 453 netsend 1;
+#X msg -160 391 connect 10.211.55.12 3000;
+#X obj 16 371 pack f f f;
+#X floatatom 16 334 5 0 0 0 - - -;
+#X floatatom 57 333 5 0 0 0 - - -;
+#X floatatom 100 332 5 0 0 0 - - -;
+#X text 14 311 Pitch;
+#X text 45 311 Enveloppe;
+#X text 98 312 Onset;
+#X msg -156 432 disconnect;
+#X obj 16 401 list prepend send;
+#X obj 16 422 list trim;
+#X obj 136 351 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj -258 343 comment 0 20 Times ? 0 255 128 0 Connect to iqr;
+#X connect 0 0 4 0;
+#X connect 0 1 22 0;
+#X connect 1 0 23 0;
+#X connect 2 0 1 0;
+#X connect 3 0 5 0;
+#X connect 4 0 21 0;
+#X connect 6 0 0 0;
+#X connect 7 0 2 0;
+#X connect 19 0 18 0;
+#X connect 20 0 28 0;
+#X connect 21 0 20 0;
+#X connect 22 0 20 1;
+#X connect 22 0 30 0;
+#X connect 23 0 20 2;
+#X connect 23 0 30 0;
+#X connect 27 0 18 0;
+#X connect 28 0 29 0;
+#X connect 29 0 18 0;
+#X connect 30 0 21 0;

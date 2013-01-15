@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/specs_presenccia/!svn/ver/582/Musebot/utils
+END
+slg.audioonoff.pd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/specs_presenccia/!svn/ver/582/Musebot/utils/slg.audioonoff.pd
+END
+slg.care.pd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/specs_presenccia/!svn/ver/562/Musebot/utils/slg.care.pd
+END
+slg.clock.pd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/specs_presenccia/!svn/ver/562/Musebot/utils/slg.clock.pd
+END
+slg.caregui.pd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/specs_presenccia/!svn/ver/562/Musebot/utils/slg.caregui.pd
+END
+slg.state.pd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/specs_presenccia/!svn/ver/562/Musebot/utils/slg.state.pd
+END
+slg.lbyl.pd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/specs_presenccia/!svn/ver/562/Musebot/utils/slg.lbyl.pd
+END
+lbyl-help.pd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/specs_presenccia/!svn/ver/562/Musebot/utils/lbyl-help.pd
+END
+slg.cpu.pd
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/specs_presenccia/!svn/ver/562/Musebot/utils/slg.cpu.pd
+END

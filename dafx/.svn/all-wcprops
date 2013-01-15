@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/specs_presenccia/!svn/ver/625/Musebot/dafx
+END
+rcomp.pd
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/rcomp.pd
+END
+slg.distortion~.pd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/slg.distortion~.pd
+END
+slg.dafxdelay~.pd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/slg.dafxdelay~.pd
+END
+cross-delay.pd
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/cross-delay.pd
+END
+slg.dafxbp~.pd
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/slg.dafxbp~.pd
+END
+zcomplim.pd
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/zcomplim.pd
+END
+rlimit.pd
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/rlimit.pd
+END
+slg.convolution~.pd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/specs_presenccia/!svn/ver/625/Musebot/dafx/slg.convolution~.pd
+END
+slg.dafxharmonizer~.pd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/slg.dafxharmonizer~.pd
+END
+slg.colorfilter~.pd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/slg.colorfilter~.pd
+END
+slg.dafxtremolo~.pd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/slg.dafxtremolo~.pd
+END
+cross-delay-gop.pd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/cross-delay-gop.pd
+END
+zlimit.pd
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/zlimit.pd
+END
+slg.dafxreverb~.pd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/slg.dafxreverb~.pd
+END
+cross-delay-help.pd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/cross-delay-help.pd
+END
+slg.dafxchorus4~.pd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/specs_presenccia/!svn/ver/562/Musebot/dafx/slg.dafxchorus4~.pd
+END

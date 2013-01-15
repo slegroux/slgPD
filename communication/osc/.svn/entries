@@ -1,0 +1,52 @@
+8
+
+dir
+635
+https://iua-share.upf.es/svn/specs_presenccia/Musebot/communication/osc
+https://iua-share.upf.es/svn/specs_presenccia
+
+
+
+2008-02-15T13:23:54.672647Z
+562
+slegroux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+03aa3ccb-cf21-0410-be8c-d5f8be373799
+
+slg.parse.pd
+file
+
+
+
+
+2008-03-19T17:31:22.000000Z
+d81b3a0bcc6acacb60532657e41b224d
+2008-02-15T13:23:54.672647Z
+562
+slegroux
+
+slg.pdreceive-test.pd
+file
+
+
+
+
+2008-03-19T17:31:22.000000Z
+ccceb7e0a7afa4d8e1fdc41515346492
+2008-02-15T13:23:54.672647Z
+562
+slegroux
+

@@ -1,0 +1,20 @@
+#N canvas 0 22 673 464 10;
+#X obj 102 101 cnv 15 83 58 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X msg 199 232 \; pd dsp 1;
+#X msg 139 232 \; pd dsp 0;
+#X obj 142 109 tgl 40 0 empty empty empty 0 -6 0 10 -258113 -1 -1 0
+1;
+#X obj 139 207 sel 0 1;
+#X text 103 108 Audio;
+#X text 102 124 ON/OFF;
+#X obj 114 38 inlet;
+#X obj 218 40 loadbang;
+#X msg 218 64 1;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 4 1 1 0;
+#X connect 7 0 3 0;
+#X connect 8 0 9 0;
+#X connect 9 0 3 0;
+#X coords 0 -1 1 1 85 60 1 100 100;

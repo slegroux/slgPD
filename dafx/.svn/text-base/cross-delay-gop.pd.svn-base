@@ -1,0 +1,50 @@
+#N canvas 339 11 581 518 10;
+#X obj 435 21 loadbang;
+#X msg 428 88 0.5;
+#X obj 237 162 hsl 128 15 0 0.99 0 1 empty empty feedback -2 8 0 8
+-228992 -99865 -62784 6414 1;
+#X msg 464 87 500;
+#X obj 237 184 hsl 128 15 0 500 0 1 empty empty delay_time-Left -2
+8 0 8 -228992 -99865 -62784 12700 1;
+#X obj 237 205 hsl 128 15 0 500 0 1 empty empty delay_time-Right -2
+8 0 8 -228992 -99865 -62784 12700 1;
+#X obj 237 226 hsl 128 15 0 1 0 1 empty empty dry -2 8 0 8 -228992
+-99865 -62784 6350 1;
+#X msg 540 87 0.5;
+#X obj 237 248 hsl 128 15 0 1 0 1 empty empty wet -2 8 0 8 -228992
+-99865 -62784 6350 1;
+#X obj 42 326 outlet~;
+#X obj 120 328 outlet~;
+#X obj 40 84 inlet~;
+#X obj 96 85 inlet~;
+#X obj 160 20 inlet;
+#X obj 204 20 inlet;
+#X obj 250 20 inlet;
+#X obj 294 19 inlet;
+#X obj 339 19 inlet;
+#X msg 497 87 500;
+#X obj 41 283 cross-delay;
+#X connect 0 0 1 0;
+#X connect 0 0 3 0;
+#X connect 0 0 18 0;
+#X connect 0 0 7 0;
+#X connect 1 0 2 0;
+#X connect 2 0 19 2;
+#X connect 3 0 4 0;
+#X connect 4 0 19 3;
+#X connect 5 0 19 4;
+#X connect 6 0 19 5;
+#X connect 7 0 6 0;
+#X connect 7 0 8 0;
+#X connect 8 0 19 6;
+#X connect 11 0 19 0;
+#X connect 12 0 19 1;
+#X connect 13 0 2 0;
+#X connect 14 0 4 0;
+#X connect 15 0 5 0;
+#X connect 16 0 6 0;
+#X connect 17 0 8 0;
+#X connect 18 0 5 0;
+#X connect 19 0 9 0;
+#X connect 19 1 10 0;
+#X coords 0 -1 1 1 160 130 1 220 140;

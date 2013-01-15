@@ -1,0 +1,42 @@
+#N canvas 24 22 768 518 10;
+#X obj 101 101 cnv 15 400 122 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 101 127 pianoroll pianoroll1 400 96 0 11 12 16 0 0 1 0 1 0 1
+0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1;
+#X obj 58 62 cyclone/counter;
+#X obj 101 265 + 60;
+#X obj 494 282 maxlib/scale 0 1 0 127;
+#X obj 101 330 outlet;
+#X obj 105 103 tgl 20 0 empty empty empty 0 -6 0 10 -258113 -1 -1 1
+1;
+#X obj 58 37 metro 500;
+#X msg 190 51 transpose \$1;
+#X msg 286 48 init;
+#X obj 475 106 bng 15 250 50 0 empty empty empty 0 -6 0 10 -4034 -1
+-1;
+#X obj 493 317 outlet;
+#X obj 302 112 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-4034 -1 -1 0 256;
+#X obj 219 112 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-4034 -1 -1 0 256;
+#X text 302 99 Transpose;
+#X text 436 104 Reset;
+#X text 217 99 Metronome;
+#X text 129 105 ON/OFF;
+#X obj 380 25 loadbang;
+#X msg 388 51 500;
+#X connect 1 0 3 0;
+#X connect 1 1 4 0;
+#X connect 2 0 1 0;
+#X connect 3 0 5 0;
+#X connect 4 0 11 0;
+#X connect 6 0 7 0;
+#X connect 7 0 2 0;
+#X connect 8 0 1 0;
+#X connect 9 0 1 0;
+#X connect 10 0 9 0;
+#X connect 12 0 8 0;
+#X connect 13 0 7 1;
+#X connect 18 0 19 0;
+#X connect 19 0 13 0;
+#X coords 0 -1 1 1 402 125 1 100 100;

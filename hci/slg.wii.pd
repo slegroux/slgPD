@@ -1,0 +1,125 @@
+#N canvas 40 61 721 601 10;
+#X obj 394 220 image wii.gif;
+#X obj -21 15 vsl 15 100 0 127 0 0 \$0-pitch-s empty empty 0 -8 0 10
+-260097 -1 -1 6860 1;
+#X obj -21 -12 ctlin 21;
+#X obj 41 -12 ctlin 22;
+#X obj 102 -12 ctlin 23;
+#X obj 163 -12 ctlin 24;
+#X obj 447 354 ctlin 18;
+#X obj 508 355 ctlin 19;
+#X obj 569 356 ctlin 20;
+#X obj -20 183 ctlin 39;
+#X obj 40 183 ctlin 27;
+#X obj -20 210 tgl 20 0 \$0-a-s empty empty 0 -6 0 10 -260097 -1 -1
+0 127;
+#X text 449 504 X;
+#X text 511 504 Y;
+#X text 570 504 Z;
+#X text -21 131 Pitch;
+#X text 37 129 Roll;
+#X text 144 131 Acceleration;
+#X text 96 130 Yaw;
+#X obj 207 482 comment 0 20 Times ? 0 255 128 0 Wii Interface;
+#X obj 196 509 comment 0 14 Helvetica ? 0 0 128 128 slegroux@iua.upf.edu
+;
+#X obj 237 527 comment 0 14 Helvetica ? 0 0 128 128 (c) 2007;
+#X text -17 236 A;
+#X text 43 236 B;
+#X obj -20 255 ctlin 127;
+#X obj 40 255 ctlin 126;
+#X text -17 308 1;
+#X text 43 308 2;
+#X obj 47 330 ctlin 124;
+#X obj 13 439 ctlin 125;
+#X obj -20 330 ctlin 122;
+#X obj 83 362 ctlin 123;
+#X obj -3 488 ctlin 110;
+#X obj 62 488 ctlin 111;
+#X obj 41 16 vsl 15 100 0 127 0 0 \$0-roll-s empty empty 0 -8 0 10
+-260097 -1 -1 4989 1;
+#X obj 102 16 vsl 15 100 0 127 0 0 \$0-yaw-s empty empty 0 -8 0 10
+-260097 -1 -1 4989 1;
+#X obj 163 16 vsl 15 100 0 127 0 0 \$0-acceleration-s empty empty 0
+-8 0 10 -260097 -1 -1 2027 1;
+#X obj 447 389 vsl 15 100 0 127 0 0 empty empty empty 0 -8 0 10 -260097
+-1 -1 4989 1;
+#X obj 508 390 vsl 15 100 0 127 0 0 empty empty empty 0 -8 0 10 -260097
+-1 -1 4365 1;
+#X obj 569 390 vsl 15 100 0 127 0 0 empty empty empty 0 -8 0 10 -260097
+-1 -1 5769 1;
+#X obj 40 211 tgl 20 0 \$0-b-s empty empty 0 -6 0 10 -260097 -1 -1
+0 127;
+#X obj -20 279 tgl 20 0 \$0-1-s empty empty 0 -6 0 10 -260097 -1 -1
+0 127;
+#X obj 40 280 tgl 20 0 \$0-2-s empty empty 0 -6 0 10 -260097 -1 -1
+0 127;
+#X obj -3 520 tgl 20 0 \$0-minus-s empty empty 0 -6 0 10 -260097 -1
+-1 0 127;
+#X obj 62 521 tgl 20 0 \$0-plus-s empty empty 0 -6 0 10 -260097 -1
+-1 0 127;
+#X obj 74 384 tgl 20 0 \$0-right-s empty empty 0 -6 0 10 -260097 -1
+-1 0 127;
+#X obj 48 411 tgl 20 0 \$0-down-s empty empty 0 -6 0 10 -260097 -1
+-1 0 127;
+#X obj 47 359 tgl 20 0 \$0-up-s empty empty 0 -6 0 10 -260097 -1 -1
+0 127;
+#X obj 21 386 tgl 20 0 \$0-left-s empty empty 0 -6 0 10 -260097 -1
+-1 0 127;
+#N canvas 661 27 429 422 sendtoOSC 1;
+#X obj 20 26 r \$0-pitch-s;
+#X obj 106 27 r \$0-roll-s;
+#X obj 188 27 r \$0-yaw-s;
+#X obj 264 26 r \$0-acceleration-s;
+#X msg 20 56 /pitch \$1;
+#X msg 106 57 /roll \$1;
+#X msg 188 58 /yaw \$1;
+#X msg 264 58 /acceleration \$1;
+#X obj 25 127 r \$0-a-s;
+#X obj 100 128 r \$0-b-s;
+#X obj 177 128 r \$0-1-s;
+#X obj 253 129 r \$0-2-s;
+#X obj 29 224 r \$0-left-s;
+#X obj 105 223 r \$0-right-s;
+#X obj 190 223 r \$0-up-s;
+#X obj 267 225 r \$0-down-s;
+#X msg 25 157 /a \$1;
+#X msg 100 157 /b \$1;
+#X msg 177 156 /1 \$1;
+#X msg 253 158 /2 \$1;
+#X msg 29 257 /left \$1;
+#X msg 105 258 /right \$1;
+#X msg 190 261 /up \$1;
+#X msg 266 263 /down \$1;
+#X obj 124 363 outlet;
+#X obj 121 330 OSCroute;
+#X connect 0 0 4 0;
+#X connect 1 0 5 0;
+#X connect 2 0 6 0;
+#X connect 3 0 7 0;
+#X connect 8 0 16 0;
+#X connect 9 0 17 0;
+#X connect 10 0 18 0;
+#X connect 11 0 19 0;
+#X connect 12 0 20 0;
+#X connect 13 0 21 0;
+#X connect 14 0 22 0;
+#X connect 15 0 23 0;
+#X restore 494 533 pd sendtoOSC;
+#X connect 2 0 1 0;
+#X connect 3 0 34 0;
+#X connect 4 0 35 0;
+#X connect 5 0 36 0;
+#X connect 6 0 37 0;
+#X connect 7 0 38 0;
+#X connect 8 0 39 0;
+#X connect 9 0 11 0;
+#X connect 10 0 40 0;
+#X connect 24 0 41 0;
+#X connect 25 0 42 0;
+#X connect 28 0 47 0;
+#X connect 29 0 46 0;
+#X connect 30 0 48 0;
+#X connect 31 0 45 0;
+#X connect 32 0 43 0;
+#X connect 33 0 44 0;

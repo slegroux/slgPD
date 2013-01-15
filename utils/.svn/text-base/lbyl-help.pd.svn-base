@@ -1,0 +1,29 @@
+#N canvas 0 0 540 438 10;
+#X obj 114 291 lbyl;
+#X msg 224 249 tellmeeverything;
+#X msg 224 269 version;
+#X msg 66 116 tolerance \$1;
+#X msg 102 195 quota \$1;
+#X msg 66 116 tolerance \$1;
+#X floatatom 66 95 5 0 0 0 - - -;
+#X floatatom 102 174 5 0 0 0 - - -;
+#X floatatom 114 315 5 0 0 0 - - -;
+#X floatatom 63 267 5 0 0 0 - - -;
+#X text 82 411 Related to median filter;
+#X text 78 394 "Don't go there until you really mean it";
+#X text 35 5 LBYL: "Look before you leap";
+#X text 224 230 Print some possibly-useful info;
+#X text 64 66 "tolerance" parameter: how much change between successive
+inputs does it take to count as a "leap"?;
+#X text 100 143 "quota" parameter: after a leap \, how many inputs
+in the new range does lbyl have to see before it "believes" the jump?
+;
+#X text 47 378 Some comments from Julius Smith:;
+#X connect 0 0 8 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 6 0 5 0;
+#X connect 7 0 4 0;
+#X connect 9 0 0 0;

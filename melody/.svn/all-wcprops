@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/specs_presenccia/!svn/ver/569/Musebot/melody
+END
+slg.scalize.pd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/specs_presenccia/!svn/ver/569/Musebot/melody/slg.scalize.pd
+END
+slg.pitch2note.pd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/specs_presenccia/!svn/ver/562/Musebot/melody/slg.pitch2note.pd
+END
+slg.randnotepick.pd
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/specs_presenccia/!svn/ver/562/Musebot/melody/slg.randnotepick.pd
+END
+slg.notetransposer.pd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/specs_presenccia/!svn/ver/562/Musebot/melody/slg.notetransposer.pd
+END
+slg.midi2pc.pd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/specs_presenccia/!svn/ver/562/Musebot/melody/slg.midi2pc.pd
+END

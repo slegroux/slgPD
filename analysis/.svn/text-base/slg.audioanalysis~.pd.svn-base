@@ -1,0 +1,84 @@
+#N canvas 300 186 912 501 10;
+#X obj 101 101 cnv 15 658 212 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 154 71 inlet~;
+#X obj 103 104 slg.sigmundanalysis~;
+#X obj 102 254 slg.lbyl;
+#X obj 270 331 slg.env~;
+#X floatatom 270 358 5 0 0 0 - - -;
+#X floatatom 313 360 5 0 0 0 - - -;
+#X obj 289 264 bng 40 250 50 0 empty empty empty 0 -6 0 10 -258113
+-1 -1;
+#X obj 355 104 slg.bonkers;
+#N canvas 40 528 425 226 help 0;
+#X text 48 44 npts - number of points in each analysis window (1024)
+;
+#X text 48 62 hop - number of points between each analysis (512);
+#X text 48 79 npeak - number of sinusoidal peaks (20);
+#X text 49 116 vibrato - depth of vibrato to expect in 1/2-tones (1)
+;
+#X text 48 135 stabletime - time (msec) to wait to report notes (50)
+;
+#X text 50 153 minpower - minimum power (dB) to report a pitch (50)
+;
+#X text 50 172 growth - growth (dB) to report a new note (7);
+#X text 49 97 maxfreq - maximum sinusoid frequency in Hz. (1000000)
+;
+#X restore 461 338 pd help;
+#N canvas 773 433 431 190 help 0;
+#X text 20 16 Set low and high thresholds. Signal growth must exceed
+the high one and then fall to the low one to make an attack.;
+#X text 21 54 Minimum "velocity" to output (quieter notes are ignored.)
+;
+#X text 19 79 Describes how energy in each frequency band masks later
+energy in the band. Here the masking is total for 4 analysis periods
+and then drops by 0.7 each period.;
+#X text 22 134 Minimum time (msec) between attacks;
+#X restore 518 338 pd help;
+#X obj 233 229 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-257985 -1 -1 0.027605 256;
+#X obj 101 391 outlet;
+#X obj 184 390 outlet;
+#X obj 315 390 outlet;
+#X obj 399 389 outlet;
+#X obj 751 354 outlet~;
+#X text 68 412 continuous pitch;
+#X text 192 412 note;
+#X text 313 409 envelope;
+#X text 403 409 bang;
+#X text 750 375 bong monitor;
+#X obj 369 340 env~;
+#X obj 700 354 outlet~;
+#X obj 553 55 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
+1;
+#X obj 749 55 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
+1;
+#X obj 584 8 loadbang;
+#X msg 588 36 1;
+#X msg 627 36 0;
+#X obj 474 31 inlet;
+#X obj 729 20 inlet;
+#X connect 1 0 2 0;
+#X connect 1 0 4 0;
+#X connect 1 0 8 0;
+#X connect 1 0 22 0;
+#X connect 2 0 3 0;
+#X connect 2 1 13 0;
+#X connect 3 0 12 0;
+#X connect 4 0 5 0;
+#X connect 4 1 6 0;
+#X connect 4 1 11 0;
+#X connect 7 0 15 0;
+#X connect 8 0 7 0;
+#X connect 8 1 23 0;
+#X connect 8 2 16 0;
+#X connect 22 0 14 0;
+#X connect 24 0 8 1;
+#X connect 25 0 8 2;
+#X connect 26 0 27 0;
+#X connect 26 0 28 0;
+#X connect 27 0 24 0;
+#X connect 28 0 25 0;
+#X connect 29 0 8 1;
+#X connect 30 0 8 2;
+#X coords 0 -1 1 1 660 215 1 100 100;

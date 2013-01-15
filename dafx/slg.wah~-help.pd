@@ -1,0 +1,22 @@
+#N canvas 323 22 477 307 10;
+#X obj 81 179 slg.wah~;
+#X obj 81 211 ezdac~;
+#X obj 81 72 slg.loadsample~;
+#X obj 126 159 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 339 99 expr (60000 / $f1);
+#X floatatom 339 71 5 0 0 0 - - -;
+#X floatatom 345 128 5 0 0 0 - - -;
+#X obj 288 155 metro 500;
+#X obj 288 128 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 2 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 2;
+#X connect 4 0 6 0;
+#X connect 4 0 7 1;
+#X connect 5 0 4 0;
+#X connect 7 0 0 3;
+#X connect 8 0 7 0;

@@ -1,0 +1,174 @@
+#N canvas 107 22 312 364 10;
+#X obj 1 1 cnv 5 198 138 empty empty Delay 5 5 1 14 -233017 -66577
+0;
+#X obj 10 32 vsl 15 80 0 1 0 0 empty \$0-delay-gain Gain 0 -8 0 8 -4033
+-1 -1 2039 1;
+#X floatatom 10 121 5 0 0 0 - - -;
+#X obj 152 30 tgl 10 0 empty \$0-delay-bypass Bypass 0 -6 0 8 -258049
+-1 -1 1 1;
+#X obj 55 32 vsl 15 80 0 1000 0 0 empty \$0-delay-delay Delay_(ms)
+0 -8 1 8 -4033 -1 -1 7900 0;
+#X floatatom 55 120 5 0 0 0 - - -;
+#X obj 152 57 vradio 10 1 0 5 empty \$0-delay-preset Presets 0 -6 0
+8 -262081 -1 -1 4;
+#X obj 100 34 vsl 15 80 0 100 0 0 empty \$0-delay-feedback feedback()
+0 -8 1 8 -4033 -1 -1 7900 0;
+#X floatatom 101 120 5 0 0 0 - - -;
+#X obj 7 205 inlet~;
+#X obj 75 310 outlet~;
+#X obj 185 246 inlet;
+#N canvas 102 22 921 699 FX-delay 0;
+#X floatatom 231 253 5 0 0 0 - - -;
+#X floatatom 247 359 5 0 100 0 - - -;
+#X text 165 53 Delay (ms) \, Feedback %;
+#X text 337 51 Delay Presets;
+#X obj 360 230 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 361 272 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 361 342 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 318 213 20;
+#X msg 316 242 50;
+#X obj 361 310 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X text 387 310 100ms \, 100% feedback;
+#X msg 319 309 100;
+#X obj 357 155 loadbang;
+#X obj 358 185 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 319 183 0;
+#X msg 316 350 1000;
+#X text 387 273 75ms \, 75% feedback;
+#X msg 320 276 75;
+#X text 388 344 1 second \, 100% feedback;
+#X text 393 183 without delay;
+#X text 387 227 slapback (20ms \, 50% feedback);
+#X obj 25 73 inlet~;
+#X obj 59 624 outlet~;
+#X text 29 47 Audio;
+#X obj 167 74 inlet;
+#X obj 258 75 inlet;
+#X obj 347 74 inlet;
+#X text 385 130 Delay Presets Bank;
+#X obj 173 -22 cnv 15 300 40 empty empty empty 20 12 0 14 -262081 -66577
+0;
+#X text 285 -10 Delay Effect;
+#X text 443 43 OSC Controls;
+#X obj 27 97 cnv 15 600 20 empty empty empty 20 12 0 14 -4033 -66577
+0;
+#X obj 28 597 cnv 15 600 20 empty empty empty 20 12 0 14 -4033 -66577
+0;
+#X obj 444 59 inlet;
+#X obj 517 173 hradio 15 1 0 5 empty empty empty 0 -6 0 8 -262144 -1
+-1 4;
+#X obj 518 193 route 0 1 2 3 4;
+#X obj 445 78 OSCroute /bypass /gain /delay /feedback /preset;
+#X obj 26 175 bypass;
+#X obj 73 75 inlet;
+#X text 72 50 bypass;
+#X obj 81 110 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 122 75 inlet;
+#X text 128 50 gain;
+#X floatatom 124 114 5 0 0 0 - - -;
+#X obj 83 570 *~ 0.9;
+#X obj 440 452 s \$0-delay-bypass;
+#X obj 509 421 s \$0-delay-gain;
+#X obj 639 419 s \$0-delay-feedback;
+#X obj 575 478 s \$0-delay-delay;
+#N canvas 8 22 592 390 effect-delay 0;
+#X obj 65 274 hip~ 5;
+#X text 160 56 <-- delay time;
+#X text 319 231 write to delay line;
+#X text 308 88 read from delay line;
+#X text 102 191 add the original and the delayed signal;
+#X obj 66 190 +~;
+#X obj 107 158 *~ 0.7;
+#X text 170 159 feedback gain;
+#X obj 460 119 / 100;
+#X obj 16 54 inlet~;
+#X obj 105 56 inlet;
+#X obj 461 57 inlet;
+#X obj 66 314 outlet~;
+#X obj 106 88 delread~ \$0-delay1 160;
+#X obj 102 232 delwrite~ \$0-delay1 2000;
+#X connect 0 0 12 0;
+#X connect 5 0 0 0;
+#X connect 5 0 14 0;
+#X connect 6 0 5 1;
+#X connect 8 0 6 1;
+#X connect 9 0 5 0;
+#X connect 10 0 13 0;
+#X connect 11 0 8 0;
+#X connect 13 0 6 0;
+#X restore 84 488 pd effect-delay;
+#X obj 288 448 s \$0-delay-feedback;
+#X obj 226 482 s \$0-delay-delay;
+#X obj 703 118 s \$0-delay-preset;
+#X connect 0 0 51 0;
+#X connect 1 0 50 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 17 0;
+#X connect 6 0 11 0;
+#X connect 6 0 15 0;
+#X connect 7 0 0 0;
+#X connect 8 0 1 0;
+#X connect 9 0 11 0;
+#X connect 11 0 1 0;
+#X connect 11 0 0 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 14 0 1 0;
+#X connect 14 0 0 0;
+#X connect 15 0 0 0;
+#X connect 17 0 1 0;
+#X connect 17 0 0 0;
+#X connect 21 0 37 0;
+#X connect 24 0 49 1;
+#X connect 25 0 49 2;
+#X connect 26 0 34 0;
+#X connect 33 0 36 0;
+#X connect 34 0 35 0;
+#X connect 35 0 13 0;
+#X connect 35 1 4 0;
+#X connect 35 2 5 0;
+#X connect 35 3 9 0;
+#X connect 35 4 6 0;
+#X connect 36 0 37 1;
+#X connect 36 0 45 0;
+#X connect 36 1 44 1;
+#X connect 36 1 46 0;
+#X connect 36 2 0 0;
+#X connect 36 2 48 0;
+#X connect 36 3 1 0;
+#X connect 36 3 47 0;
+#X connect 36 4 34 0;
+#X connect 36 4 52 0;
+#X connect 37 0 49 0;
+#X connect 37 1 22 0;
+#X connect 38 0 40 0;
+#X connect 38 0 37 1;
+#X connect 41 0 43 0;
+#X connect 41 0 44 1;
+#X connect 44 0 22 0;
+#X connect 49 0 44 0;
+#X restore 75 273 pd FX-delay;
+#X text 212 44 No delay;
+#X text 212 55 20ms \, 50%;
+#X text 211 66 75ms \, 75%;
+#X text 207 74 100ms \, 100%;
+#X text 207 85 1 sec \, 100%;
+#X connect 1 0 2 0;
+#X connect 1 0 12 2;
+#X connect 3 0 12 1;
+#X connect 4 0 5 0;
+#X connect 4 0 12 3;
+#X connect 6 0 12 5;
+#X connect 7 0 8 0;
+#X connect 7 0 12 4;
+#X connect 9 0 12 0;
+#X connect 11 0 12 6;
+#X connect 12 0 10 0;
+#X coords 0 0 1 1 202 142 1 0 0;

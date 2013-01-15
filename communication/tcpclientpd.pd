@@ -1,0 +1,80 @@
+#N canvas 254 551 674 307 10;
+#X msg 238 -63 disconnect;
+#X msg 7 -60 dump \$1;
+#X obj 7 -79 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 60 64 spigot;
+#X obj 93 43 tgl 15 0 empty empty enable_print 17 7 0 10 -24198 -258699
+-258699 1 1;
+#X obj 160 20 tgl 15 0 empty empty connected 18 7 0 8 -24198 -241291
+-1 1 1;
+#X obj 61 -11 mrpeach/tcpclient;
+#X obj 285 19 prepend set;
+#X msg 285 44 1 117 12 196 1 147 1 177 1 116 12 194 1 144 1 179 1 115
+12 181 1 145 1 178 1 117 12 174 1 144 1 173 1 117 12 180 1 144 1 176
+1 100 12 177 1 144 1 176 1 115 12 181 1 142 1 176 1 116 12 175 1 145
+1 177 1 116 12 170 1 146 1 177 1 114 12 173 1 145 1 178 1 117 12 182
+1 147 1 174 1 116 12 184 1 146 1 176 1 114 12 174 1 145 1 176 1 116
+12 171 1 148 1 176 1 110 12 164 1 145 1 173 1 117 12 183 1 145 1 176
+;
+#X obj 59 171 sendOSC;
+#X msg 60 115 connect localhost 9998;
+#X msg 212 118 disconnect;
+#X msg 67 137 connect localhost 9997;
+#X msg 60 91 send /brain \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8;
+#X msg 62 -62 connect 172.16.110.128 1234;
+#X msg 174 -34 receive;
+#N canvas 0 22 381 524 trash 0;
+#X obj 57 186 unpack i i i i i i i i;
+#X obj 57 217 * 256;
+#X obj 57 241 +;
+#X obj 93 218 * 256;
+#X obj 93 242 +;
+#X obj 130 218 * 256;
+#X obj 130 242 +;
+#X obj 167 218 * 256;
+#X obj 167 242 +;
+#X floatatom 57 273 5 0 0 0 - - -;
+#X floatatom 93 273 5 0 0 0 - - -;
+#X floatatom 130 275 5 0 0 0 - - -;
+#X floatatom 167 273 5 0 0 0 - - -;
+#X obj 51 330 anal.scope_~;
+#X obj 51 307 maxlib/scale 0 65535 0 1;
+#X floatatom 54 87 5 0 0 0 - - -;
+#X obj 57 146 serialize 8;
+#X msg 22 16 send 71 69 84 32 104 116 116 112 58 47 47 47 105 110 100
+101 120 46 104 116 109 108 13 10;
+#X connect 0 0 1 0;
+#X connect 0 1 2 1;
+#X connect 0 2 3 0;
+#X connect 0 3 4 1;
+#X connect 0 4 5 0;
+#X connect 0 5 6 1;
+#X connect 0 6 7 0;
+#X connect 0 7 8 1;
+#X connect 1 0 2 0;
+#X connect 2 0 9 0;
+#X connect 3 0 4 0;
+#X connect 4 0 10 0;
+#X connect 5 0 6 0;
+#X connect 6 0 11 0;
+#X connect 7 0 8 0;
+#X connect 8 0 12 0;
+#X connect 14 0 13 0;
+#X connect 15 0 16 0;
+#X restore 322 -63 pd trash;
+#X connect 0 0 6 0;
+#X connect 1 0 6 0;
+#X connect 2 0 1 0;
+#X connect 3 0 13 0;
+#X connect 4 0 3 1;
+#X connect 6 0 3 0;
+#X connect 6 0 7 0;
+#X connect 6 2 5 0;
+#X connect 7 0 8 0;
+#X connect 10 0 9 0;
+#X connect 11 0 9 0;
+#X connect 12 0 9 0;
+#X connect 13 0 9 0;
+#X connect 14 0 6 0;
+#X connect 15 0 6 0;

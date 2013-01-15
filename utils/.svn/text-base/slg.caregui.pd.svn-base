@@ -1,0 +1,53 @@
+#N canvas 159 61 1112 572 10;
+#X obj 102 103 bng 10 250 50 0 empty empty empty 0 -6 0 8 -24198 -1
+-1;
+#X obj 115 103 bng 10 250 50 0 empty empty empty 0 -6 0 8 -258699 -1
+-1;
+#X obj 96 30 inlet;
+#X obj 139 103 bng 10 250 50 0 empty empty empty 0 -6 0 8 -262131 -1
+-1;
+#N canvas 497 329 693 405 guts 0;
+#X obj 68 51 inlet;
+#X obj 227 43 inlet;
+#X obj 353 58 inlet;
+#X msg 77 85 save RRADICAL;
+#X msg 210 121 load RRADICAL;
+#X text 207 100 load/save file into/from pool by name;
+#X obj 196 147 t b a;
+#X text 11 131 set filename;
+#X obj 170 209 caretaker \$1;
+#X obj 105 237 outlet;
+#X text 116 255 bang after restore;
+#X obj 472 54 inlet;
+#X msg 349 172 file \$1;
+#X obj 351 139 savepanel;
+#X msg 350 242 savex bla.xml;
+#X connect 0 0 3 0;
+#X connect 1 0 4 0;
+#X connect 2 0 13 0;
+#X connect 3 0 8 0;
+#X connect 4 0 6 0;
+#X connect 6 0 9 0;
+#X connect 6 1 8 0;
+#X connect 11 0 8 0;
+#X connect 12 0 8 0;
+#X connect 13 0 12 0;
+#X connect 14 0 8 0;
+#X restore 155 29 pd guts;
+#X obj 246 29 outlet;
+#X obj 149 103 bng 10 250 50 0 empty empty empty 0 -6 0 8 -250685 -1
+-1;
+#X msg 244 203 reset;
+#X obj 127 103 bng 10 250 50 0 empty empty empty 0 -6 0 8 -261689 -1
+-1;
+#X msg 143 190 print;
+#X connect 0 0 4 0;
+#X connect 1 0 4 1;
+#X connect 2 0 4 3;
+#X connect 3 0 4 2;
+#X connect 4 0 5 0;
+#X connect 6 0 7 0;
+#X connect 7 0 4 3;
+#X connect 8 0 9 0;
+#X connect 9 0 4 3;
+#X coords 0 -1 1 1 60 15 1 100 100;

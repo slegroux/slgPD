@@ -1,0 +1,26 @@
+#N canvas 0 22 450 300 10;
+#X obj 101 101 cnv 15 98 38 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#X obj 110 113 tgl 20 0 empty empty empty 0 -6 0 8 -258113 -1 -1 0
+1;
+#X text 134 113 gate;
+#X text 164 99 beat;
+#X obj 163 115 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-260097 -1 -1 0 256;
+#X obj 73 167 slg.gate~;
+#X obj 94 216 outlet~;
+#X obj 144 215 outlet~;
+#X obj 47 50 inlet~;
+#X obj 92 49 inlet~;
+#X obj 168 48 r~ input1;
+#X obj 171 172 switch~;
+#X connect 1 0 5 3;
+#X connect 1 0 11 0;
+#X connect 4 0 5 2;
+#X connect 5 0 6 0;
+#X connect 5 1 7 0;
+#X connect 8 0 5 0;
+#X connect 9 0 5 1;
+#X connect 10 0 5 0;
+#X connect 10 0 5 1;
+#X coords 0 -1 1 1 100 40 1 100 100;

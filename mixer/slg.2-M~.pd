@@ -1,0 +1,57 @@
+#N canvas 233 115 771 518 10;
+#X obj 100 100 cnv 15 61 123 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#X obj 103 107 vsl 15 82 -99 18 0 1 empty empty empty 0 -7 0 8 -260097
+-1 -1 6438 1;
+#X obj 103 192 nbx 3 10 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-257985 -1 -1 -6.00667 256;
+#X obj 104 213 nbx 5 10 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-257985 -1 -1 0 256;
+#X obj 348 74 loadbang;
+#X msg 227 37 -6;
+#X obj 470 54 inlet;
+#X obj 470 234 line~;
+#X obj 521 89 loadbang;
+#X obj 663 54 inlet;
+#X obj 470 171 pack 0 30;
+#X obj 470 139 + 127;
+#X obj 470 115 t f;
+#X text 411 39 range( -127db : +18db);
+#X text 603 38 optional fade time (ms);
+#X msg 521 113 0;
+#X obj 256 156 inlet~;
+#X obj 256 408 *~;
+#X obj 103 204 bng 10 250 50 0 empty empty empty 0 -6 0 10 -4034 -1
+-1;
+#X text 109 199 -6db;
+#X obj 470 209 linedrive 145 7.94328 1.12202 30;
+#X obj 121 103 slg.v~;
+#X obj 316 157 inlet~;
+#X obj 316 415 *~;
+#X text 128 208 fade;
+#X obj 399 485 throw~ LFront;
+#X obj 460 456 throw~ RFront;
+#X connect 1 0 2 0;
+#X connect 1 0 12 0;
+#X connect 3 0 10 1;
+#X connect 4 0 5 0;
+#X connect 5 0 1 0;
+#X connect 6 0 12 0;
+#X connect 6 0 1 0;
+#X connect 7 0 17 1;
+#X connect 7 0 23 1;
+#X connect 8 0 15 0;
+#X connect 9 0 10 1;
+#X connect 10 0 20 0;
+#X connect 11 0 10 0;
+#X connect 12 0 11 0;
+#X connect 15 0 10 1;
+#X connect 16 0 17 0;
+#X connect 17 0 21 0;
+#X connect 17 0 25 0;
+#X connect 18 0 5 0;
+#X connect 20 0 7 0;
+#X connect 22 0 23 0;
+#X connect 23 0 21 0;
+#X connect 23 0 26 0;
+#X coords 0 -1 1 1 62 126 1 100 100;

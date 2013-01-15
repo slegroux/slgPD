@@ -1,0 +1,49 @@
+8
+
+dir
+635
+https://iua-share.upf.es/svn/specs_presenccia/Musebot/communication
+https://iua-share.upf.es/svn/specs_presenccia
+
+
+
+2008-02-15T13:23:54.672647Z
+562
+slegroux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+03aa3ccb-cf21-0410-be8c-d5f8be373799
+
+serial
+dir
+
+midi
+dir
+
+osc
+dir
+
+slg.dm5.pd
+file
+
+
+
+
+2008-03-19T17:31:22.000000Z
+d9b3de47f9dddb28978849abea7076dc
+2008-02-15T13:23:54.672647Z
+562
+slegroux
+

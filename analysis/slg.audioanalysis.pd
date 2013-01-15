@@ -1,0 +1,56 @@
+#N canvas 116 98 887 575 10;
+#X obj 154 71 inlet~;
+#X obj 102 102 slg.sigmundanalysis~;
+#X obj 102 253 slg.lbyl;
+#X obj 270 331 slg.env~;
+#X floatatom 270 358 5 0 0 0 - - -;
+#X floatatom 313 360 5 0 0 0 - - -;
+#X obj 283 264 bng 40 250 50 0 empty empty empty 0 -6 0 10 -258113
+-1 -1;
+#X obj 355 104 slg.bonkers;
+#N canvas 40 528 421 222 help 0;
+#X text 48 44 npts - number of points in each analysis window (1024)
+;
+#X text 48 62 hop - number of points between each analysis (512);
+#X text 48 79 npeak - number of sinusoidal peaks (20);
+#X text 49 116 vibrato - depth of vibrato to expect in 1/2-tones (1)
+;
+#X text 48 135 stabletime - time (msec) to wait to report notes (50)
+;
+#X text 50 153 minpower - minimum power (dB) to report a pitch (50)
+;
+#X text 50 172 growth - growth (dB) to report a new note (7);
+#X text 49 97 maxfreq - maximum sinusoid frequency in Hz. (1000000)
+;
+#X restore 473 387 pd help;
+#N canvas 773 433 427 186 help 0;
+#X text 20 16 Set low and high thresholds. Signal growth must exceed
+the high one and then fall to the low one to make an attack.;
+#X text 21 54 Minimum "velocity" to output (quieter notes are ignored.)
+;
+#X text 19 79 Describes how energy in each frequency band masks later
+energy in the band. Here the masking is total for 4 analysis periods
+and then drops by 0.7 each period.;
+#X text 22 134 Minimum time (msec) between attacks;
+#X restore 608 442 pd help;
+#X obj 233 229 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-257985 -1 -1 1 256;
+#X obj 115 420 outlet;
+#X obj 160 421 outlet;
+#X obj 306 415 outlet;
+#X obj 353 415 outlet;
+#X obj 749 386 outlet~;
+#X connect 0 0 1 0;
+#X connect 0 0 3 0;
+#X connect 0 0 7 0;
+#X connect 1 0 2 0;
+#X connect 1 1 12 0;
+#X connect 2 0 11 0;
+#X connect 3 0 4 0;
+#X connect 3 1 5 0;
+#X connect 3 1 10 0;
+#X connect 3 1 13 0;
+#X connect 6 0 14 0;
+#X connect 7 0 6 0;
+#X connect 7 2 15 0;
+#X coords 0 -1 1 1 660 215 1 100 100;

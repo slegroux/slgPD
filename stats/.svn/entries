@@ -1,0 +1,53 @@
+8
+
+dir
+635
+https://iua-share.upf.es/svn/specs_presenccia/Musebot/stats
+https://iua-share.upf.es/svn/specs_presenccia
+
+
+
+2008-02-28T18:22:06.936853Z
+622
+slegroux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+03aa3ccb-cf21-0410-be8c-d5f8be373799
+
+slg.passpct.pd
+file
+
+
+
+
+2008-03-19T17:27:02.000000Z
+a8ff4a310bbfc4c7a59e71025a3035a2
+2008-02-28T18:22:06.936853Z
+622
+slegroux
+
+slg.probablyON.pd
+file
+
+
+
+
+2008-03-19T17:27:02.000000Z
+87d56c0915cdd4fccd7eec0229443a80
+2008-02-15T13:23:54.672647Z
+562
+slegroux
+has-props
+

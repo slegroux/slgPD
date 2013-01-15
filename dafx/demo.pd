@@ -1,0 +1,67 @@
+#N canvas 905 23 415 649 10;
+#X text 79 13 DAFX Demo;
+#X obj 81 268 slg.hardclip~;
+#X obj 80 210 slg.wah~;
+#X obj 79 154 slg.robot~;
+#X obj 82 567 ezdac~;
+#X obj 156 243 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 125 187 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 253 101 metro 500;
+#X obj 253 76 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X floatatom 304 75 5 0 0 0 - - -;
+#X obj 257 136 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 77 64 slg.loadsample~;
+#X obj 136 132 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 219 137 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 254 217 counter 0 48;
+#X obj 81 339 slg.gate~;
+#X obj 147 311 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 81 374 slg.trail~;
+#X obj 169 347 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 205 494 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 82 522 slg.mute~;
+#X obj 113 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 160 132 5 0 0 0 - - -;
+#X obj 81 418 slg.freeverb~;
+#X connect 1 0 15 0;
+#X connect 1 1 15 1;
+#X connect 2 0 1 0;
+#X connect 2 1 1 1;
+#X connect 3 0 2 0;
+#X connect 3 1 2 1;
+#X connect 5 0 1 2;
+#X connect 6 0 2 3;
+#X connect 7 0 10 0;
+#X connect 7 0 14 0;
+#X connect 8 0 7 0;
+#X connect 9 0 7 1;
+#X connect 11 0 3 0;
+#X connect 11 0 3 1;
+#X connect 11 2 13 0;
+#X connect 11 2 2 2;
+#X connect 12 0 3 3;
+#X connect 14 0 3 2;
+#X connect 14 0 15 2;
+#X connect 15 0 17 0;
+#X connect 15 1 17 1;
+#X connect 16 0 15 3;
+#X connect 17 0 23 0;
+#X connect 17 1 23 1;
+#X connect 18 0 17 2;
+#X connect 19 0 20 2;
+#X connect 20 0 4 0;
+#X connect 20 1 4 1;
+#X connect 21 0 3 2;
+#X connect 22 0 3 2;
+#X connect 23 0 20 0;
+#X connect 23 1 20 1;

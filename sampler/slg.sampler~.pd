@@ -1,0 +1,235 @@
+#N canvas 51 22 992 653 10;
+#X msg 103 230 read;
+#X msg 288 267 next;
+#X msg 332 251 dump;
+#X obj 409 313 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 409 335 s b_loadbank;
+#X obj 287 357 * 25;
+#X msg 200 466 \; \$1-play bang;
+#X obj 148 353 int;
+#X floatatom 163 335 5 0 0 0 - - -;
+#X obj 155 118 bng 10 250 50 0 empty empty empty 0 -6 0 10 -260097
+-1 -1;
+#X msg 29 474 \; \$2-velocity \$1;
+#X floatatom 29 429 5 0 0 0 - - -;
+#X obj 462 440 outlet~;
+#X obj 103 116 bng 10 250 50 0 empty empty empty 0 -6 0 10 -4034 -1
+-1;
+#X obj 116 116 bng 10 250 50 0 \$0-dumpsamples empty empty 0 -6 0 10
+-159808 -1 -1;
+#X obj 61 43 inlet;
+#X obj 114 44 inlet;
+#X obj 267 45 loadbang;
+#X msg 267 69 127;
+#X obj 126 132 nbx 2 10 -1e+37 1e+37 0 0 \$0-samplenumber empty empty
+0 -6 0 10 -257985 -1 -1 0 256;
+#X obj 157 132 nbx 3 10 -1e+37 1e+37 0 0 \$0-velocitysample empty empty
+0 -6 0 10 -257985 -1 -1 127 256;
+#X obj 61 71 t b b f;
+#X obj 169 118 bng 10 250 50 0 \$0-stopsample empty empty 0 -6 0 10
+-258113 -1 -1;
+#X msg 120 590 \; \$1-stop bang;
+#X obj 169 43 inlet;
+#X obj 213 43 inlet;
+#X obj 690 83 symbol \$1;
+#X obj 332 358 makefilename \$1%s;
+#N canvas 0 22 437 214 (c) 0;
+#X obj 77 109 print using;
+#X obj 77 34 loadbang;
+#X msg 77 74 slg.sampler~ (c) 2007 Sylvain Le Groux <slegroux@iua.upf.edu>
+;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X restore 329 45 pd (c);
+#X obj 674 61 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144 -1
+-1;
+#X symbolatom 699 107 10 0 0 0 - - -;
+#X msg 690 131 obj 500 200 pd \$1;
+#X obj 690 154 s pd-slg.sampler~.pd;
+#X obj 966 181 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X floatatom 993 260 5 0 0 0 - - -;
+#X floatatom 1030 260 5 0 0 0 - - -;
+#X obj 966 203 t b b b b b;
+#X msg 923 258 symbol obj;
+#X obj 638 401 symbol;
+#X obj 743 263 symbol \$1;
+#X symbolatom 743 291 20 0 0 0 - - -;
+#X obj 673 221 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 671 314 makesymbol %s-%s;
+#X obj 673 293 pack s s;
+#X msg 673 265 symbol pd;
+#X obj 673 242 t b b;
+#X msg 1072 258 symbol slg.loadsamples~;
+#X text 457 471 indice \, pd-bank \, obj \,;
+#X obj 978 285 pack s s f f s s f;
+#X msg 978 309 \; \$1 \$2 \$3 \$4 \$5 \$6 \$7 \;;
+#X obj 638 379 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 638 534 prepend set;
+#X msg 638 556 pd-wav/autodemo/inside/ 150 wav/autodemo/inside/2_6_interaction.wav
+2_6_interaction.wav wav/autodemo/inside/;
+#X obj 332 415 print filename:;
+#X obj 191 401 coll;
+#C restore;
+#X obj 191 432 print;
+#X obj 447 814 popup 124 25 #ffffff samples 2_7_closing.wav 2_4_fingers.wav
+2_3_floor.wav 2_2_sensing.wav 2_1_intro.wav 2_2_sensing.wav 2_3_floor.wav
+2_4_fingers.wav 2_5_roboser.wav 2_7_closing.wav 2_2_sensing.wav 2_2_sensing.wav
+2_1_intro.wav 2_1_intro.wav 2_3_floor.wav 2_2_sensing.wav folhas2.wav
+folhas2.wav folhas2.wav folhas2.wav folhas3.wav folhas42.wav 2_2_sensing.wav
+2_2_sensing.wav 2_1_intro.wav 2_4_fingers.wav 2_4_fingers.wav 2_5_roboser.wav
+2_5_roboser.wav 2_1_intro.wav 2_1_intro.wav 2_1_intro.wav 2_1_intro.wav
+2_1_intro.wav 2_1_intro.wav 2_2_sensing.wav 2_3_floor.wav 2_1_intro.wav
+2_6_interaction.wav 2_6_interaction.wav 2_5_roboser.wav 2_1_intro.wav
+2_1_intro.wav 2_1_intro.wav 2_2_sensing.wav 2_1_intro.wav 2_2_sensing.wav
+2_3_floor.wav 2_4_fingers.wav 2_5_roboser.wav 2_6_interaction.wav 2_6_interaction.wav
+2_6_interaction.wav 2_6_interaction.wav 3_1_intro_PVC.wav 3_1_intro_PVC.wav
+3_2_flying.wav 3_3_videos.wav 3_4_intro_interaction.wav 3_5_pong_explained.wav
+3_5_pong_explained.wav 2_6_interaction.wav 2_6_interaction.wav 2_5_roboser.wav
+2_5_roboser.wav;
+#X msg 447 788 append \$1;
+#X msg 445 766 name samples;
+#X obj 29 451 pack f s;
+#X obj 120 567 symbol \$1;
+#X symbolatom 102 145 15 0 0 0 - #0-samplename -;
+#X obj 462 415 catch~ \$1;
+#X msg 639 482 \; \$1 obj 0 \$2 slg.loadsamples~ \$3 \$4 \$5 \;;
+#X text 893 466 3: path of sample;
+#X text 894 482 4: name of sampler;
+#X text 896 499 5: name of signal output;
+#X obj 638 461 pack s f s s s;
+#X obj 744 535 print object-creation;
+#X obj 332 299 coll;
+#C restore;
+#X obj 283 19 inlet;
+#X obj 620 61 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144 -1
+-1;
+#X text 473 4 to do: same input several messages: route read dump next
+\, etc...;
+#X text 60 22 number;
+#X text 111 21 velocity;
+#X text 215 26 dump;
+#X text 326 19 read path directly;
+#X obj 120 546 r \$0-stopsample;
+#X obj 28 405 r \$0-velocitysample;
+#X obj 229 152 s \$0-velocitysample;
+#X obj 163 314 r \$0-samplenumber;
+#X obj 103 263 s \$0-readcoll;
+#X obj 335 272 r \$0-readcoll;
+#X obj 192 376 r \$0-readcoll;
+#X obj 674 40 r \$0-readcoll;
+#X obj 342 89 s \$0-readcoll;
+#X obj 186 515 s \$0-samplename;
+#X text 430 312 when dump finished \, load sples;
+#X msg 217 177 read /Users/Shared/Roboser/wav/autodemo/inside/bank.txt
+;
+#X obj 523 111 symbol \$1;
+#X obj 522 88 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144 -1
+-1;
+#X obj 523 133 print parameter1;
+#X obj 332 228 r \$0-dumpsamples;
+#X text 20 355 coll used to read;
+#X text 258 207 coll used to create objects;
+#X symbolatom 215 624 30 0 0 0 - - -;
+#X symbolatom 700 373 50 0 0 0 - - -;
+#X text 449 359 1st arg of patch+output of coll;
+#X msg 427 258 1;
+#X msg 457 257 2;
+#X symbolatom 627 624 30 0 0 0 - - -;
+#X symbolatom 438 624 30 0 0 0 - - -;
+#X floatatom 403 625 5 0 0 0 - - -;
+#X symbolatom 816 624 30 0 0 0 - - -;
+#X connect 0 0 81 0;
+#X connect 1 0 69 0;
+#X connect 2 0 69 0;
+#X connect 3 0 4 0;
+#X connect 5 0 67 1;
+#X connect 5 0 102 0;
+#X connect 7 0 54 0;
+#X connect 8 0 7 1;
+#X connect 9 0 7 0;
+#X connect 9 0 79 0;
+#X connect 11 0 59 0;
+#X connect 13 0 0 0;
+#X connect 15 0 21 0;
+#X connect 16 0 20 0;
+#X connect 17 0 18 0;
+#X connect 18 0 20 0;
+#X connect 21 0 9 0;
+#X connect 21 1 20 0;
+#X connect 21 2 19 0;
+#X connect 24 0 85 0;
+#X connect 25 0 14 0;
+#X connect 26 0 31 0;
+#X connect 26 0 67 4;
+#X connect 26 0 103 0;
+#X connect 27 0 53 0;
+#X connect 27 0 67 2;
+#X connect 27 0 101 0;
+#X connect 29 0 26 0;
+#X connect 29 0 41 0;
+#X connect 30 0 31 0;
+#X connect 31 0 32 0;
+#X connect 33 0 36 0;
+#X connect 34 0 48 2;
+#X connect 35 0 48 3;
+#X connect 36 0 38 0;
+#X connect 36 1 37 0;
+#X connect 36 2 34 0;
+#X connect 36 3 35 0;
+#X connect 36 4 46 0;
+#X connect 37 0 48 1;
+#X connect 38 0 67 0;
+#X connect 38 0 95 0;
+#X connect 39 0 40 0;
+#X connect 39 0 43 1;
+#X connect 41 0 45 0;
+#X connect 42 0 38 1;
+#X connect 42 0 96 0;
+#X connect 43 0 42 0;
+#X connect 44 0 43 0;
+#X connect 45 0 44 0;
+#X connect 45 1 39 0;
+#X connect 46 0 48 4;
+#X connect 48 0 49 0;
+#X connect 50 0 38 0;
+#X connect 51 0 52 0;
+#X connect 54 0 55 0;
+#X connect 54 0 57 0;
+#X connect 54 0 6 0;
+#X connect 54 0 59 1;
+#X connect 54 0 60 1;
+#X connect 54 0 86 0;
+#X connect 57 0 56 0;
+#X connect 58 0 56 0;
+#X connect 59 0 10 0;
+#X connect 60 0 23 0;
+#X connect 62 0 12 0;
+#X connect 67 0 63 0;
+#X connect 67 0 51 0;
+#X connect 67 0 68 0;
+#X connect 69 0 27 0;
+#X connect 69 0 67 3;
+#X connect 69 0 100 0;
+#X connect 69 0 50 0;
+#X connect 69 1 5 0;
+#X connect 69 3 3 0;
+#X connect 70 0 71 0;
+#X connect 70 0 85 0;
+#X connect 71 0 29 0;
+#X connect 77 0 60 0;
+#X connect 78 0 11 0;
+#X connect 80 0 8 0;
+#X connect 82 0 69 0;
+#X connect 83 0 54 0;
+#X connect 84 0 29 0;
+#X connect 88 0 81 0;
+#X connect 89 0 91 0;
+#X connect 90 0 89 0;
+#X connect 92 0 2 0;
+#X connect 98 0 69 0;
+#X connect 99 0 69 0;
+#X coords 0 -1 1 1 95 60 1 100 100;

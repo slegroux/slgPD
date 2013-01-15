@@ -1,0 +1,48 @@
+#N canvas 580 207 521 428 10;
+#X obj 101 102 cnv 15 198 72 empty empty empty 20 12 1 14 -233017 -66577
+0;
+#X obj 106 224 bp~ 100 10;
+#X obj 106 283 outlet~;
+#X obj 217 108 knob 32 32 10 15000 1 0 empty empty empty 0 -8 0 8 -262144
+-4033 -1 257 1;
+#X floatatom 216 144 5 0 0 0 - - -;
+#X obj 262 109 knob 32 32 0 150 0 0 empty empty empty 0 -8 0 8 -262144
+-4033 -1 413 1;
+#X floatatom 262 145 5 0 0 0 - - -;
+#X obj 107 121 bng 15 250 50 0 empty empty Reset 0 -6 0 8 -258049 -1
+-1;
+#X text 218 155 F(Hz);
+#X text 271 156 Q;
+#X msg 103 191 clear;
+#X obj 24 164 inlet~;
+#X obj 106 256 *~ 1;
+#X obj 171 109 knob 32 32 0 1 0 0 empty empty empty 0 -8 0 8 -262144
+-4033 -1 3100 1;
+#X floatatom 171 145 5 0 0 0 - - -;
+#X text 174 155 Gain;
+#X obj 109 150 hradio 8 1 0 6 empty empty Presets 0 -6 0 8 -262081
+-1 -1 0;
+#X obj 218 44 inlet;
+#X obj 321 34 loadbang;
+#X msg 343 78 20;
+#X msg 372 79 1;
+#X msg 407 78 100;
+#X connect 1 0 12 0;
+#X connect 3 0 4 0;
+#X connect 3 0 1 1;
+#X connect 5 0 6 0;
+#X connect 5 0 1 2;
+#X connect 7 0 10 0;
+#X connect 10 0 1 0;
+#X connect 11 0 1 0;
+#X connect 12 0 2 0;
+#X connect 13 0 14 0;
+#X connect 13 0 12 1;
+#X connect 17 0 3 0;
+#X connect 18 0 19 0;
+#X connect 18 0 20 0;
+#X connect 18 0 21 0;
+#X connect 19 0 5 0;
+#X connect 20 0 13 0;
+#X connect 21 0 3 0;
+#X coords 0 -1 1 1 200 75 1 100 100;

@@ -1,0 +1,106 @@
+#N canvas 384 22 825 595 10;
+#X obj 101 102 cnv 15 148 58 empty empty LoadSndFile 5 6 1 11 -228856
+-1 0;
+#X obj 144 125 tgl 12 0 \$0-loop empty Loop 0 -6 1 8 -4033 -1 -1 0
+1;
+#X obj 127 125 tgl 12 0 \$0-play \$0-play-gui Play 0 -6 1 8 -4033 -1
+-1 0 1;
+#X obj 106 124 bng 12 250 50 0 \$0-load empty Load 0 -6 0 8 -258049
+-1 -1;
+#X obj 113 233 openpanel;
+#X obj 208 384 spigot;
+#X symbolatom 104 143 21 0 0 0 - #0-symbol-gui -;
+#X obj 206 258 symbol2list /;
+#X obj 206 283 list-rev;
+#X obj 206 305 list-idx;
+#X obj 113 341 readsf~ 2;
+#X obj 124 42 inlet;
+#X symbolatom 113 285 10 0 0 0 - - -;
+#X obj 113 306 prepend open;
+#X obj 164 414 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 38 231 t f b;
+#X obj 260 65 sel 0;
+#X obj 163 41 inlet;
+#X obj 206 235 prepend symbol;
+#X obj 174 104 hsl 60 10 0 100 0 0 \$0-volume-s \$0-volume-r empty
+-2 -6 0 8 -106458 -1 -1 5900 1;
+#X obj 111 543 outlet~;
+#X obj 383 405 r \$0-volume-s;
+#X obj 383 471 line~;
+#X obj 383 450 pack 0 50;
+#X obj 111 519 *~;
+#X obj 160 543 outlet~;
+#X obj 160 519 *~;
+#X obj 410 23 loadbang;
+#X text 472 364 (c) Sylvain Le Groux 2007;
+#X text 494 380 slegroux@iua.upf.edu;
+#X obj 410 46 float \$0;
+#X text 470 20 presets;
+#X obj 205 40 inlet;
+#X text 120 16 play;
+#X text 154 8 filepath;
+#X text 205 18 volume;
+#X text 454 201 To Do: - Compute total length - Balance Control - Speed
+Variation - Vu-Meter;
+#X obj 465 304 pan~;
+#X obj 486 280 knob 16 16 -45 45 0 0 empty empty empty 0 -8 0 8 -4160
+-1 -1 0 1;
+#X obj 383 427 dbtorms;
+#X msg 410 70 \; \$1-volume-r 100 \;;
+#X text 500 303 pan ok for mono;
+#X obj 533 100 print using;
+#X msg 533 59 slg.loadsoundfile~ (c) 2007 Sylvain Le Groux <slegroux@iua.upf.edu>
+;
+#X obj 113 204 r \$0-load;
+#X obj 260 40 r \$0-play;
+#X obj 241 361 r \$0-loop;
+#X obj 208 433 s \$0-play-gui;
+#X obj 124 66 s \$0-play-gui;
+#X obj 38 205 r \$0-play;
+#X msg 208 408 1;
+#X obj 164 466 s \$0-play-gui;
+#X msg 164 439 0;
+#X obj 172 119 clock;
+#X obj 205 329 s \$0-symbol-gui;
+#X connect 2 0 53 0;
+#X connect 4 0 7 0;
+#X connect 4 0 12 0;
+#X connect 5 0 50 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 54 0;
+#X connect 10 0 24 0;
+#X connect 10 1 26 0;
+#X connect 10 2 5 0;
+#X connect 10 2 14 0;
+#X connect 11 0 48 0;
+#X connect 12 0 13 0;
+#X connect 13 0 10 0;
+#X connect 14 0 52 0;
+#X connect 15 0 10 0;
+#X connect 15 1 12 0;
+#X connect 16 0 53 1;
+#X connect 17 0 18 0;
+#X connect 18 0 12 0;
+#X connect 18 0 7 0;
+#X connect 21 0 39 0;
+#X connect 22 0 24 1;
+#X connect 22 0 26 1;
+#X connect 23 0 22 0;
+#X connect 24 0 20 0;
+#X connect 26 0 25 0;
+#X connect 27 0 30 0;
+#X connect 27 0 43 0;
+#X connect 30 0 40 0;
+#X connect 32 0 19 0;
+#X connect 38 0 37 1;
+#X connect 39 0 23 0;
+#X connect 43 0 42 0;
+#X connect 44 0 4 0;
+#X connect 45 0 16 0;
+#X connect 46 0 5 1;
+#X connect 49 0 15 0;
+#X connect 50 0 47 0;
+#X connect 52 0 51 0;
+#X coords 0 -1 1 1 150 62 1 100 100;
