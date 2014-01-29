@@ -1,0 +1,9 @@
+0, 1 5 0 1 5 0 1 0 1 1 data/wav/autodemo/outside/3_1_intro_PVC.wav
+;
+1, 1 5 0 1 5 0 1 0 1 1 data/wav/autodemo/outside/3_2_flying.wav;
+2, 1 5 0 1 5 0 1 0 1 1 data/wav/autodemo/outside/3_3_videos.wav;
+3, 1 5 0 1 5 0 1 0 1 1 data/wav/autodemo/outside/3_4_intro_interaction.wav;
+4, 1 5 0 1 5 0 1 0 1 1 data/wav/autodemo/outside/3_5_pong_explained.wav
+;
+5, 1 5 0 1 5 0 1 0 1 1 data/wav/autodemo/outside/3_6_farewell.wav
+;

@@ -1,0 +1,15 @@
+all-off bang;
+awasample 3;
+comment start sample;
+outerspace-volume 0.7;
+outerspace-preset 7;
+outerspace-onoff 1;
+20000 sine-onoff 1;
+comment 20 s;
+sine-volume 70;
+sine-freq 10;
+5000 sine-freq 5;
+comment 25s;
+comment 6000 outerspace-onoff 1;
+sine-onoff 0;
+comment 35 s;

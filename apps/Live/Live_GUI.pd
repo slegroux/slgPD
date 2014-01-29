@@ -1,0 +1,22 @@
+#N canvas 3 549 319 172 10;
+#X obj 11 150 Live;
+#X obj 9 10 cnv 15 300 135 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#X obj 21 39 bng 15 250 50 0 openMixer empty Mixer 20 6 0 10 -33289
+-1 -1;
+#X obj 21 77 bng 15 250 50 0 openIQR empty IQR 20 6 0 10 -33289 -1
+-1;
+#X obj 21 96 bng 15 250 50 0 openAnalyzer empty Analyzer 20 6 0 10
+-33289 -1 -1;
+#X text 17 15 In/Outs;
+#X obj 21 58 bng 15 250 50 0 openADCDAC empty ADC/DAC 20 6 0 10 -33289
+-1 -1;
+#X obj 107 47 bng 15 250 50 0 openDAFX empty DAFX 20 6 0 10 -33289
+-1 -1;
+#X text 85 150 (c) 2008 slegroux@ccrma.stanford.edu;
+#X obj 107 68 bng 15 250 50 0 openTexture empty Texture 20 6 0 10 -33289
+-1 -1;
+#X obj 107 90 bng 15 250 50 0 openSynthesizer empty Synthesizer 20
+6 0 10 -33289 -1 -1;
+#X obj 199 44 bng 15 250 50 0 openSCOFO empty Scofo 20 6 0 10 -33289
+-1 -1;

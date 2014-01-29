@@ -1,0 +1,14 @@
+#N canvas 0 22 248 256 10;
+#X obj 22 149 soundfiler;
+#X obj 21 23 inlet;
+#X obj 21 59 sel 1;
+#X obj 19 92 openpanel;
+#X msg 22 121 read \$1 wavetable5;
+#X obj 141 72 505;
+#X obj 147 116 s wave_on5value;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;

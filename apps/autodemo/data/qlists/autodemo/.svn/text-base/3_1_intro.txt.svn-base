@@ -1,0 +1,15 @@
+comment ---- spatialization positioning---;
+all-off bang;
+comment ---- start doing stuff----;
+outside 1;
+birdy-onoff 1;
+30000 storm-onoff 1;
+wind-volume 0.2;
+child-volume 40;
+spat-volume 0.4;
+10000 wind-onoff 1;
+child-onoff 1;
+circle-spat-onoff 1;
+10000 birdy-onoff 0;
+storm-onoff 0;
+wind-onoff 0;

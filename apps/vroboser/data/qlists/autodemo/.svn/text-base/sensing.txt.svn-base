@@ -1,0 +1,12 @@
+x 72;
+y 50;
+awasample 2;
+outerspace-volume 0.1;
+outerspace-preset 1;
+outerspace-onoff 1;
+30000 additive-onoff 1;
+additive-volume 50;
+additive-transpose -10;
+10000 additive-transpose 0;
+20000 outerspace-onoff 0;
+additive-onoff 0;

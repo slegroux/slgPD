@@ -1,0 +1,11 @@
+all-off bang;
+awasample 4;
+comment play sample;
+outerspace-preset 5;
+outerspace-volume 0.7;
+outerspace-onoff 1;
+5000 happy-onoff 1;
+9000 outerspace-onoff 1;
+comment second 14;
+4000 happy-onoff 0;
+comment 18 s.;

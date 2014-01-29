@@ -1,0 +1,15 @@
+all-off bang;
+comment ---- spatialization positioning---;
+comment ---- start doing stuff----;
+outside 2;
+outerspace-preset 5;
+outerspace-onoff 1;
+outerspace-volume 0.5;
+25000 wind-volume 0.1;
+child-volume 30;
+spat-volume 0.2;
+circle-spat-onoff 1;
+child-onoff 1;
+wind-onoff 1;
+24000 outerspace-onoff 1;
+comment circle-spat-onoff 0;

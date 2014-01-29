@@ -1,0 +1,7 @@
+all-off bang;
+comment ---- spatialization positioning---;
+comment ---- start doing stuff----;
+outside 4;
+outerspace-onoff 1;
+outerspace-preset 1;
+outerspace-volume 0.5;

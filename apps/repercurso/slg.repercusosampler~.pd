@@ -1,0 +1,128 @@
+#N canvas -5 26 1223 619 10;
+#X obj 102 273 slg.sampler8~;
+#X obj -219 77 cnv 15 200 100 empty empty empty 20 12 0 14 -204793
+-66577 0;
+#X obj 102 101 cnv 15 425 170 empty empty empty 20 12 0 14 -203904
+-66577 0;
+#X obj -205 184 select 46 36 38 48 45 41 51 49 57 62 65 67;
+#X obj 105 238 bng 30 250 50 0 empty empty empty 0 -6 0 10 -4065 -1
+-1;
+#X obj 165 238 bng 30 250 50 0 empty empty empty 0 -6 0 10 -4065 -1
+-1;
+#X obj 216 238 bng 30 250 50 0 empty empty empty 0 -6 0 10 -4065 -1
+-1;
+#X obj 271 238 bng 30 250 50 0 empty empty empty 0 -6 0 10 -4065 -1
+-1;
+#X obj -122 212 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj -101 212 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj -81 212 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj -60 212 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj -39 212 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj -19 212 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 2 212 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144 -1
+-1;
+#X obj 23 212 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144 -1
+-1;
+#X obj 80 30 comment 0 20 Times ? 0 255 128 0 Repercuso MIDI Sampler
+;
+#X obj 82 53 comment 0 14 Helvetica ? 0 0 128 128 (c) 2007::slegroux@iua.upf.edu
+;
+#X obj -169 95 notein;
+#X floatatom -169 124 5 0 0 0 - - -;
+#X floatatom -127 125 5 0 0 0 - - -;
+#X floatatom -89 124 5 0 0 0 - - -;
+#X text -87 145 channel;
+#X text -132 145 velocity;
+#X text -173 146 note;
+#X obj -202 56 comment 0 14 Helvetica ? 0 0 128 128 MIDI Inputs from
+DM5;
+#X obj 668 149 comment 0 14 Helvetica ? 0 0 128 128 Sample 3;
+#X obj 670 168 comment 0 14 Helvetica ? 0 0 128 128 Sample 4;
+#X obj 691 185 comment 0 14 Helvetica ? 0 0 128 128 Sample 1;
+#X obj 271 137 slg.midimonitor;
+#X obj 661 85 comment 0 14 Helvetica ? 0 0 128 128 Monitor MIDI Inputs
+;
+#X obj 410 149 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 414 151 ezdac~;
+#X obj 665 105 comment 0 14 Helvetica ? 0 0 128 128 Audio ON/OFF;
+#X obj 332 238 bng 30 250 50 0 empty empty empty 0 -6 0 10 -4065 -1
+-1;
+#X obj 385 238 bng 30 250 50 0 empty empty empty 0 -6 0 10 -4065 -1
+-1;
+#X obj 438 238 bng 30 250 50 0 empty empty empty 0 -6 0 10 -4065 -1
+-1;
+#X obj 492 238 bng 30 250 50 0 empty empty empty 0 -6 0 10 -4065 -1
+-1;
+#X obj 668 128 comment 0 14 Helvetica ? 0 0 128 128 Sample 2;
+#X text 626 32 AUDIO ON/OFF;
+#X text 647 55 MIDI INPUTS;
+#X obj 402 112 cnv 15 120 20 empty empty AUDIO_ON/OFF 5 12 0 14 -62783
+-163777 0;
+#X obj 270 111 cnv 15 120 20 empty empty MIDI_INPUTS 5 12 0 14 -62783
+-163777 0;
+#X obj 105 205 cnv 15 120 20 empty empty TRIGGERS 5 12 0 14 -62783
+-163777 0;
+#X obj 111 114 cnv 15 140 40 empty empty RepercuSample 5 25 1 18 -4065
+-1 0;
+#X msg 692 346 /s1 b;
+#X msg 753 347 /s2 b;
+#X msg 812 346 /s3 b;
+#X msg 886 347 /s4 b;
+#X msg 686 406 /s5 b;
+#X msg 736 407 /s6 b;
+#X msg 785 406 /s7 b;
+#X msg 835 405 /s8 b;
+#X text 119 159 slegroux@iua.upf.edu;
+#X text 149 173 (c) 2007;
+#X obj 102 514 throw~ \$0-out;
+#X obj 484 74 catch~ \$0-out;
+#X floatatom 466 211 5 0 500 0 - - -;
+#X text 413 211 Go to DB;
+#X connect 0 0 55 0;
+#X connect 3 0 4 0;
+#X connect 3 1 5 0;
+#X connect 3 2 6 0;
+#X connect 3 3 7 0;
+#X connect 3 4 8 0;
+#X connect 3 4 34 0;
+#X connect 3 5 9 0;
+#X connect 3 5 35 0;
+#X connect 3 6 10 0;
+#X connect 3 6 36 0;
+#X connect 3 7 11 0;
+#X connect 3 7 37 0;
+#X connect 3 8 12 0;
+#X connect 3 9 13 0;
+#X connect 3 10 14 0;
+#X connect 3 11 15 0;
+#X connect 4 0 45 0;
+#X connect 5 0 46 0;
+#X connect 6 0 47 0;
+#X connect 7 0 48 0;
+#X connect 18 0 19 0;
+#X connect 18 1 20 0;
+#X connect 18 2 21 0;
+#X connect 19 0 3 0;
+#X connect 34 0 49 0;
+#X connect 35 0 50 0;
+#X connect 36 0 51 0;
+#X connect 37 0 52 0;
+#X connect 45 0 0 2;
+#X connect 46 0 0 2;
+#X connect 47 0 0 2;
+#X connect 48 0 0 2;
+#X connect 49 0 0 2;
+#X connect 50 0 0 2;
+#X connect 51 0 0 2;
+#X connect 52 0 0 2;
+#X connect 56 0 32 0;
+#X connect 56 0 32 1;
+#X connect 57 0 0 0;
+#X coords 0 -1 1 1 428 400 1 100 100;

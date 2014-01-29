@@ -1,0 +1,49 @@
+8
+
+dir
+635
+https://iua-share.upf.es/svn/specs_presenccia/Musebot/apps/autodemo/data/wav/autodemo
+https://iua-share.upf.es/svn/specs_presenccia
+
+
+
+2008-02-27T16:24:24.431662Z
+618
+slegroux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+03aa3ccb-cf21-0410-be8c-d5f8be373799
+
+bank.txt
+file
+
+
+
+
+2008-03-19T17:31:01.000000Z
+d76dcdefe0a4ff808349a3ca4c068da6
+2008-02-15T13:23:54.672647Z
+562
+slegroux
+
+inside
+dir
+
+intro
+dir
+
+outside
+dir
+

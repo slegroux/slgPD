@@ -1,0 +1,84 @@
+ , ,
+"" , ,
+"" 0 , "bpm" , 159
+"" 0 , "length" , 16
+"" 0 , "rhythm" , 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"" 0 , "steps" , 4
+"" 1 , ,
+"bassdrum" , ,
+"bassdrum" 0 , "bpm" , 159
+"bassdrum" 0 , "length" , 16
+"bassdrum" 0 , "rhythm" , 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"bassdrum" 0 , "steps" , 4
+"fmstate" , ,
+"fmstate" 0 , 0.326191 , 67.3077 0.183333 99.0991 0.10873 182.692 0.015873 150.901 0
+"fmstate" 0 , 0.376191 , 51.0222 0.125397 201.923 0.0325396 247.055 0
+"fmstate" 0 , 0.383333 , 10.5769 0.166667 50.9615 0 38.4615 0
+"fmstate" 0 , 0.809524 , 990.991 0.15873 2500 0.015873 1509.01 0
+"fmstate" 0 , "ampEnv" , 0.359524 75.0606 0.0753967 274.038 0.015873 150.901 0
+"fmstate" 0 , "duration" , 800
+"fmstate" 0 , "frequency" , 9
+"fmstate" 0 , "harmonicity" , 2
+"fmstate" 0 , "miEnvgen" , 0.7 122.153 0 175.742 0.05 59.406 0.133333 79.2078 0.0333334 63.4913 0
+"fmstate" 0 , "preset-name" , "kick1"
+"fmstate" 1 , 0.326191 , 26.9837 0.125397 322.115 0.015873 150.901 0
+"fmstate" 1 , 0.376191 , 89.4837 0.0587301 259.615 0.015873 150.901 0
+"fmstate" 1 , 0.392857 , 60.6376 0.0420634 288.461 0.015873 150.901 0
+"fmstate" 1 , 0.809524 , 990.991 0.15873 2500 0.015873 1509.01 0
+"fmstate" 1 , "duration" , 800
+"fmstate" 1 , "frequency" , 3
+"fmstate" 1 , "harmonicity" , 12
+"fmstate" 1 , "miEnvgen" , 0.25 114.078 0.0499995 277.011 0.0166667 39.604 0.05 69.3069 0
+"fmstate" 1 , "preset-name" , "kick2"
+"fmstate" 2 , 0.539683 , 68.4685 0.730159 75.6757 0.650794 88.2883 0.0634921 167.568 0
+"fmstate" 2 , "ampEnv" , 0.359524 26.9231 0.166667 60.0485 0.00873005 192.308 0.015873 120.721 0
+"fmstate" 2 , "duration" , 800
+"fmstate" 2 , "frequency" , 3
+"fmstate" 2 , "harmonicity" , 12
+"fmstate" 2 , "miEnvgen" , 0.233333 67.4997 0.0166667 94.8766 0.0166667 237.624 0
+"fmstate" 2 , "preset-name" , "kick3"
+"fmstate" 3 , 0.031746 , 68.4685 0.873016 43.2432 0.619048 221.622 0.571429 66.6667 0
+"fmstate" 3 , "ampEnv" , 0.359524 60.0485 0.0753967 219.231 0.015873 120.721 0
+"fmstate" 3 , "duration" , 800
+"fmstate" 3 , "frequency" , 3
+"fmstate" 3 , "harmonicity" , 12
+"fmstate" 3 , "miEnvgen" , 0.316667 36.5088 0.1 68.4994 0.0499995 182.37 0 112.621 0
+"fmstate" 3 , "preset-name" , "kick4"
+"fmstate" 4 , 0.031746 , 34.2342 0.873016 21.6216 0.619048 110.811 0.571429 33.3333 0
+"fmstate" 4 , "ampEnv" , 0.359524 120.097 0.0753967 438.461 0.015873 241.442 0
+"fmstate" 4 , "duration" , 800
+"fmstate" 4 , "frequency" , 3
+"fmstate" 4 , "harmonicity" , 12
+"fmstate" 4 , "miEnvgen" , 0.25 73.0173 0.05 176.603 0.0499995 325.137 0 225.243 0
+"fmstate" 4 , "preset-name" , "kick5"
+"fmstate" 5 , 0.793651 , 45.045 0.15873 68.4685 0.0634921 53.1532 0.031746 33.3333 0
+"fmstate" 5 , "ampEnv" , 0.359524 30.0243 0.0753967 109.615 0.015873 60.3604 0
+"fmstate" 5 , "duration" , 800
+"fmstate" 5 , "frequency" , 3
+"fmstate" 5 , "harmonicity" , 12
+"fmstate" 5 , "miEnvgen" , 0.183333 28.1553 0.116667 30.0971 0.05 85.4369 0 56.3107 0
+"fmstate" 5 , "preset-name" , "kick6"
+"fmstate" 6 , 0.0793651 , 504.505 0.746032 810.811 0.571429 423.423 0.174603 261.261 0
+"fmstate" 6 , "ampEnv" , 0.359524 75.0606 0.0753967 274.038 0.015873 150.901 0
+"fmstate" 6 , "duration" , 800
+"fmstate" 6 , "frequency" , 3
+"fmstate" 6 , "harmonicity" , 12
+"fmstate" 6 , "miEnvgen" , 0 75.2428 0.0333334 75.2428 0.0333334 247.573 0.0333334 101.942 0
+"fmstate" 6 , "preset-name" , "kick7"
+"fmstate" 7 , 0.0793651 , 162.162 0.873016 324.324 0.634921 1099.1 0.555556 153.153 0.174603 261.261 0
+"fmstate" 7 , "ampEnv" , 0.359524 120.097 0.0753967 110.672 0.0166667 327.789 0.015873 241.441 0
+"fmstate" 7 , "duration" , 800
+"fmstate" 7 , "frequency" , 3
+"fmstate" 7 , "harmonicity" , 12
+"fmstate" 7 , "miEnvgen" , 0.4 11.3861 0.15 31.1881 0.0333334 57.4257 0
+"fmstate" 7 , "preset-name" , "wow"
+"hihat" , ,
+"hihat" 0 , "bpm" , 159
+"hihat" 0 , "length" , 16
+"hihat" 0 , "rhythm" , 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"hihat" 0 , "steps" , 4
+"snaredrum" , ,
+"snaredrum" 0 , "bpm" , 159
+"snaredrum" 0 , "length" , 16
+"snaredrum" 0 , "rhythm" , 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"snaredrum" 0 , "steps" , 4

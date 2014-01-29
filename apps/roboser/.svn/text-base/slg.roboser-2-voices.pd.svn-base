@@ -1,0 +1,17 @@
+#N canvas 3 27 1015 455 10;
+#X obj 250 360 slg.DLSPlayer;
+#X obj 0 362 slg.DLSPlayer;
+#X obj 500 361 slg.DLSPlayer;
+#X obj 750 361 slg.DLSPlayer;
+#X obj 500 0 slg.16sequencer;
+#X obj 250 0 slg.16sequencer;
+#X obj 0 0 slg.16sequencer;
+#X obj 750 0 slg.16sequencer;
+#X connect 4 0 2 0;
+#X connect 4 1 2 1;
+#X connect 5 0 0 0;
+#X connect 5 1 0 1;
+#X connect 6 0 1 0;
+#X connect 6 1 1 1;
+#X connect 7 0 3 0;
+#X connect 7 1 3 1;

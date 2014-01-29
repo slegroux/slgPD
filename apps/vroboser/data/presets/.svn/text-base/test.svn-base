@@ -1,0 +1,8 @@
+ , ,
+"myState-2" , ,
+"myState-2" 0 , "aFloat" , 50
+"myState-2" 0 , "aRadio" , 7
+"myState-2" 0 , "aSymbol" , "fasdf"
+"myState-2" 1 , "aFloat" , -277
+"myState-2" 1 , "aRadio" , 0
+"myState-2" 1 , "aSymbol" , "2"

@@ -1,0 +1,47 @@
+#N canvas 469 126 598 394 10;
+#X declare -path . -path ../../lib -path score;
+#X obj 28 8 slg.sequencer;
+#X obj 31 234 score-editor;
+#X obj 31 211 bng 20 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X text 29 193 START;
+#X msg 148 276 0;
+#X msg 30 277 1;
+#X msg 60 277 2;
+#X msg 90 277 3;
+#X obj 75 316 s section-start;
+#X text 28 257 START;
+#X text 147 256 STOP;
+#X msg 118 276 100;
+#X text 114 256 TEST;
+#X obj 276 25 vu 10 120 vu-in1 empty -1 -8 0 8 -66577 -1 0 0;
+#X text 271 148 IN;
+#X obj 303 25 vu 10 120 out2-VU empty -1 -8 0 8 -66577 -1 0 0;
+#X obj 327 25 vu 10 120 out4-VU empty -1 -8 0 8 -66577 -1 0 0;
+#X text 307 164 OUT;
+#X text 303 148 2;
+#X text 328 147 4;
+#X obj 393 34 r synth1;
+#X obj 463 34 r synth2;
+#X floatatom 393 67 5 0 0 0 - - -;
+#X floatatom 463 68 5 0 0 0 - - -;
+#X obj 166 200 notein;
+#X floatatom 166 221 5 0 0 0 - - -;
+#X obj 337 256 loadbang;
+#X obj 266 313 section 2;
+#X obj 266 292 section 1;
+#X msg 404 244 \; section-scofo print;
+#X msg 337 281 \; section-qlist-number 1 read sect1.q \; section-scofo-number
+1 read sect1.sf \; section-qlist-number 2 read sect2.q \; section-scofo-number
+2 read sect2.sf \;;
+#X obj 18 358 declare -path . -path ../../lib -path score;
+#X connect 2 0 1 0;
+#X connect 4 0 8 0;
+#X connect 5 0 8 0;
+#X connect 6 0 8 0;
+#X connect 7 0 8 0;
+#X connect 11 0 8 0;
+#X connect 20 0 22 0;
+#X connect 21 0 23 0;
+#X connect 24 0 25 0;
+#X connect 26 0 30 0;

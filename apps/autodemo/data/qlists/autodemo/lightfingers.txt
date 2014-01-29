@@ -1,0 +1,7 @@
+x 72;
+y 50;
+awasample 4
+outerspace-volume 0.1;
+outerspace-preset 5;
+outerspace-onoff 1;
+20000 outerspace-onoff 0;

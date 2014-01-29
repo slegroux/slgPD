@@ -1,0 +1,4 @@
+#N canvas 180 51 297 203 10;
+#X obj 10 47 gemwin;
+#X obj 11 13 gem_init;
+#X connect 1 0 0 0;

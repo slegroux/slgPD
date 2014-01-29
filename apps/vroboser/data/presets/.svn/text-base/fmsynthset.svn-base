@@ -1,0 +1,23 @@
+ , ,
+"" , ,
+"" 0 , "ampEnv" , 0 50 1 50 0
+"" 0 , "bpm" , 159
+"" 0 , "length" , 16
+"" 0 , "miEnvgen" , 0 50 1 50 0
+"" 0 , "rhythm" , 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"" 0 , "steps" , 4
+"bassdrum" , ,
+"bassdrum" 0 , "bpm" , 159
+"bassdrum" 0 , "length" , 16
+"bassdrum" 0 , "rhythm" , 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"bassdrum" 0 , "steps" , 4
+"hihat" , ,
+"hihat" 0 , "bpm" , 159
+"hihat" 0 , "length" , 16
+"hihat" 0 , "rhythm" , 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"hihat" 0 , "steps" , 4
+"snaredrum" , ,
+"snaredrum" 0 , "bpm" , 159
+"snaredrum" 0 , "length" , 16
+"snaredrum" 0 , "rhythm" , 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"snaredrum" 0 , "steps" , 4

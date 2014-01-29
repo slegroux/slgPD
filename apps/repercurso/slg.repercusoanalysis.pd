@@ -1,0 +1,214 @@
+#N canvas 68 157 1008 668 10;
+#X obj -143 112 slg.sigmundanalysis~;
+#X obj 241 226 bng 40 250 50 0 empty empty empty 0 -6 0 10 -258113
+-1 -1;
+#X obj 240 18 slg.bonkers;
+#X obj -143 267 slg.lbyl;
+#X obj -259 -77 comment 0 20 Times ? 0 255 128 0 INPUT;
+#X obj -141 -88 comment 0 14 Helvetica ? 0 0 128 128 Load Wav Sample
+;
+#X obj -268 124 comment 0 20 Times ? 0 255 128 0 ANALYSIS;
+#X obj -268 160 comment 0 14 Helvetica ? 0 0 128 128 Analyses Pitch
+;
+#X obj -268 197 comment 0 14 Helvetica ? 0 0 128 128 Sinusoidal Tracks
+;
+#X obj 354 -74 comment 0 14 Helvetica ? 0 0 128 128 Onset Detection
+;
+#X obj -268 178 comment 0 14 Helvetica ? 0 0 128 128 Enveloppe;
+#X obj 58 -99 comment 0 14 Helvetica ? 0 0 128 128 Line input;
+#N canvas 40 528 421 222 analysis-parameters-help 0;
+#X text 48 44 npts - number of points in each analysis window (1024)
+;
+#X text 48 62 hop - number of points between each analysis (512);
+#X text 48 79 npeak - number of sinusoidal peaks (20);
+#X text 49 116 vibrato - depth of vibrato to expect in 1/2-tones (1)
+;
+#X text 48 135 stabletime - time (msec) to wait to report notes (50)
+;
+#X text 50 153 minpower - minimum power (dB) to report a pitch (50)
+;
+#X text 50 172 growth - growth (dB) to report a new note (7);
+#X text 49 97 maxfreq - maximum sinusoid frequency in Hz. (1000000)
+;
+#X restore -3 90 pd analysis-parameters-help;
+#N canvas 773 433 451 227 onset-detection-parameter-help 0;
+#X text 20 16 Set low and high thresholds. Signal growth must exceed
+the high one and then fall to the low one to make an attack.;
+#X text 21 54 Minimum "velocity" to output (quieter notes are ignored.)
+;
+#X text 19 79 Describes how energy in each frequency band masks later
+energy in the band. Here the masking is total for 4 analysis periods
+and then drops by 0.7 each period.;
+#X text 22 134 Minimum time (msec) between attacks;
+#X restore 427 -9 pd onset-detection-parameter-help;
+#X obj 444 -29 comment 0 14 Helvetica ? 0 0 128 128 Clik here for help
+-->;
+#X obj 9 65 comment 0 14 Helvetica ? 0 0 128 128 Clik here for help
+-->;
+#X obj 615 237 dac~;
+#N canvas 56 38 429 289 2PDsynthesis_directly 0;
+#X obj 36 235 sendOSC;
+#X msg 35 93 disconnect;
+#X msg 30 71 connect localhost 9999;
+#X msg 41 115 send /repercusosynth/pitch \$1;
+#X msg 49 136 send /repercusosynth/enveloppe \$1;
+#X msg 56 157 send /repercusosynth/onset \$1;
+#X obj 35 213 spigot;
+#X obj 68 178 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
+1;
+#X text 87 177 send data;
+#X obj 25 19 comment 0 20 Times ? 0 255 128 0 Connect to PD synthesis
+module directly;
+#X text 37 41 booh... shhh...don't say anything to Paul about this
+;
+#X text 180 64 we are skipping going through iqr;
+#X text 213 83 for the sake of testing.;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 6 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 0;
+#X connect 6 0 0 0;
+#X connect 7 0 6 1;
+#X restore 512 347 pd 2PDsynthesis_directly;
+#N canvas 813 183 456 248 buildpulse 0;
+#X obj 71 69 t b b;
+#X msg 70 99 1;
+#X msg 147 129 0;
+#X floatatom 192 88 5 0 0 0 - - -;
+#X obj 71 160 line \$1 5;
+#X obj 147 109 delay 40;
+#X obj 71 185 outlet;
+#X text 208 110 delay b/w 0 and 1 values;
+#X obj 71 37 inlet;
+#X obj 139 32 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144 -1
+-1;
+#X obj 147 186 outlet;
+#X connect 0 0 5 0;
+#X connect 0 1 1 0;
+#X connect 1 0 4 0;
+#X connect 2 0 4 0;
+#X connect 3 0 5 1;
+#X connect 4 0 6 0;
+#X connect 5 0 2 0;
+#X connect 8 0 0 0;
+#X connect 9 0 0 0;
+#X restore 241 273 pd buildpulse;
+#X obj 54 -80 slg.audioin~;
+#X obj 54 13 send~ \$0-linein;
+#X obj 241 -9 receive~ \$0-linein;
+#X obj -143 87 receive~ \$0-linein;
+#X obj -139 -14 send~ \$0-samplein;
+#X obj -143 61 receive~ \$0-samplein;
+#X obj 240 -32 receive~ \$0-samplein;
+#N canvas 44 405 294 125 stuff 0;
+#X obj 32 -12 timer;
+#X obj 32 10 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-262144 -1 -1 0 256;
+#X obj 31 -33 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144 -1
+-1;
+#X text 29 -54 time between 2 bangs;
+#X obj 167 -18 samplerate~;
+#X floatatom 167 10 5 0 0 0 - - -;
+#X obj 167 -37 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 4 0 5 0;
+#X connect 6 0 4 0;
+#X restore 512 369 pd stuff;
+#X obj -144 356 s \$0-pitch;
+#X obj 309 423 s \$0-envelope;
+#X obj 241 294 s \$0-onset;
+#N canvas 0 22 757 415 connect2iqr 0;
+#X obj 52 200 netsend 1;
+#X obj 52 86 pack f f f;
+#X msg -205 155 disconnect;
+#X obj 52 109 list prepend send;
+#X obj 52 130 list trim;
+#X obj 52 171 spigot;
+#X obj -62 41 tgl 15 0 empty empty empty 0 -6 0 10 -4034 -1 -1 0 72.049
+;
+#X text -44 39 send data;
+#X obj 52 220 != 1;
+#X obj 118 249 prepend set;
+#X msg 118 269 send -1500 0.000209153 0;
+#X msg 223 218 send \$1;
+#X msg -207 102 connect 192.168.1.22 3001;
+#X floatatom 223 194 5 0 0 0 - - -;
+#X obj 30 265 metro 500;
+#X floatatom 62 247 5 0 0 0 - - -;
+#X obj -41 103 loadbang;
+#X obj 33 23 inlet;
+#X obj 72 23 inlet;
+#X obj 111 23 inlet;
+#X obj -62 18 inlet;
+#X floatatom 113 54 5 0 0 0 - - -;
+#X floatatom 76 55 5 0 0 0 - - -;
+#X floatatom 38 54 5 0 0 0 - - -;
+#X obj 153 53 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144 -1
+-1;
+#X connect 0 0 8 0;
+#X connect 1 0 3 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 0 0;
+#X connect 5 0 9 0;
+#X connect 6 0 5 1;
+#X connect 8 0 14 0;
+#X connect 8 0 15 0;
+#X connect 9 0 10 0;
+#X connect 11 0 0 0;
+#X connect 12 0 0 0;
+#X connect 13 0 11 0;
+#X connect 14 0 12 0;
+#X connect 16 0 12 0;
+#X connect 17 0 23 0;
+#X connect 18 0 22 0;
+#X connect 18 0 24 0;
+#X connect 19 0 21 0;
+#X connect 19 0 24 0;
+#X connect 20 0 6 0;
+#X connect 21 0 1 2;
+#X connect 22 0 1 1;
+#X connect 23 0 1 0;
+#X connect 24 0 23 0;
+#X restore -129 427 pd connect2iqr;
+#X obj -129 400 tgl 15 0 empty empty empty 0 -6 0 10 -4034 -1 -1 0
+72.049;
+#X text -210 402 send data;
+#X obj -102 399 r \$0-pitch;
+#X obj -34 398 r \$0-envelope;
+#X obj 52 398 r \$0-onset;
+#X obj 437 231 throw~ audioout;
+#X floatatom -73 360 5 0 0 0 - - -;
+#X obj -139 -70 slg.loadsample~;
+#X obj 264 374 slg.env~;
+#X obj 264 351 receive~ \$0-samplein;
+#X floatatom 264 401 5 0 0 0 - - -;
+#X floatatom 309 402 5 0 0 0 - - -;
+#X obj 182 -74 adc~ 1 2 3 4;
+#X connect 0 0 3 0;
+#X connect 1 0 18 0;
+#X connect 2 0 1 0;
+#X connect 2 1 36 0;
+#X connect 2 2 16 1;
+#X connect 3 0 37 0;
+#X connect 3 0 27 0;
+#X connect 18 0 29 0;
+#X connect 19 0 20 0;
+#X connect 21 0 2 0;
+#X connect 22 0 0 0;
+#X connect 24 0 0 0;
+#X connect 25 0 2 0;
+#X connect 31 0 30 0;
+#X connect 33 0 30 1;
+#X connect 34 0 30 2;
+#X connect 35 0 30 3;
+#X connect 38 0 23 0;
+#X connect 39 0 41 0;
+#X connect 39 1 42 0;
+#X connect 40 0 39 0;
+#X connect 42 0 28 0;

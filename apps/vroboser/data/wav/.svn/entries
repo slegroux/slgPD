@@ -1,0 +1,46 @@
+8
+
+dir
+635
+https://iua-share.upf.es/svn/specs_presenccia/Musebot/apps/autodemo/data/wav
+https://iua-share.upf.es/svn/specs_presenccia
+
+
+
+2008-02-27T16:24:24.431662Z
+618
+slegroux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+03aa3ccb-cf21-0410-be8c-d5f8be373799
+
+sfx
+dir
+
+tests
+dir
+
+samples
+dir
+
+loops
+dir
+
+autodemo
+dir
+
+soundtrack
+dir
+

@@ -1,0 +1,11 @@
+#N canvas 531 712 520 156 10;
+#X obj -6 1 slg.mixer~_;
+#X obj 25 138 comment 0 12 Times ? 0 255 255 255 Live;
+#X obj 140 136 comment 0 12 Times ? 0 255 255 255 Rhythm;
+#X obj 203 136 comment 0 12 Times ? 0 255 255 255 Textures;
+#X obj 77 136 comment 0 12 Times ? 0 255 255 255 Melody;
+#X obj 268 136 comment 0 12 Times ? 0 255 255 255 Voice;
+#X obj 333 137 comment 0 12 Times ? 0 255 255 255 SFX;
+#X obj 397 137 comment 0 12 Times ? 0 255 255 255 Track;
+#X obj 458 136 comment 0 12 Times ? 0 255 255 255 Loops;
+#X coords 0 0 1 1 530 150 0;

@@ -1,0 +1,21 @@
+#N canvas 0 24 151 350 10;
+#X obj -13 3 cnv 15 150 400 empty empty empty 20 12 0 14 -1 -66577
+0;
+#X obj 10 235 slg.freeverb~;
+#X obj 199 334 cross-delay-gop;
+#X obj 622 53 slg.convolution~;
+#X obj 159 44 slg.dafxbp~;
+#X obj 369 44 slg.dafxchorus4~;
+#X obj 575 157 slg.dafxdelay~;
+#X obj 353 303 slg.dafxharmonizer~;
+#X obj 347 153 slg.dafxtremolo~;
+#X obj 406 511 slg.distortion~;
+#X obj 404 536 slg.harmonizer~;
+#X obj 12 56 slg.mute~;
+#X obj 406 567 slg.scratch~;
+#X obj 407 595 slg.trail~;
+#X obj 408 621 slg.vardelay~;
+#X obj 12 12 slg.hardclip~_;
+#X obj 12 101 slg.wah~_;
+#X obj 12 146 slg.robot~_;
+#X obj 11 191 slg.gate~_;

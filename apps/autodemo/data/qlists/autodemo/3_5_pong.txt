@@ -1,0 +1,6 @@
+all-off bang;
+comment ---- spatialization positioning---;
+comment ---- start doing stuff----;
+outside 5;
+pong-onoff 1;
+pong-volume 0;

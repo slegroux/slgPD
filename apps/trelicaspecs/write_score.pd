@@ -1,0 +1,41 @@
+#N canvas 293 57 552 399 10;
+#X obj -188 -32 bng 15 250 50 0 empty empty empty 20 8 0 8 -262144
+-1 -1;
+#X obj -126 62 savepanel;
+#X obj -109 196 textfile;
+#X obj 29 -109 r add_score;
+#X obj -194 -105 r write_partitura;
+#X obj -194 -76 sel 1;
+#X obj 23 -76 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg -185 19 clear;
+#X msg 4 75 add \$1;
+#X msg -111 98 write \$1;
+#X obj -72 -43 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -73 -104 r bangcontinue;
+#X obj -144 -31 t b b;
+#X obj -86 5 s bangvalue;
+#X obj 73 102 0;
+#X obj 66 60 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 84 158 s duration_section;
+#X obj 30 22 catch_score;
+#X connect 0 0 7 0;
+#X connect 1 0 9 0;
+#X connect 3 0 6 0;
+#X connect 4 0 5 0;
+#X connect 5 0 0 0;
+#X connect 5 1 12 0;
+#X connect 6 0 17 0;
+#X connect 7 0 2 0;
+#X connect 8 0 2 0;
+#X connect 9 0 2 0;
+#X connect 10 0 17 0;
+#X connect 11 0 10 0;
+#X connect 12 0 1 0;
+#X connect 12 1 13 0;
+#X connect 14 0 16 0;
+#X connect 15 0 14 0;
+#X connect 17 0 8 0;
+#X connect 17 0 15 0;

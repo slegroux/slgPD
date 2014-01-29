@@ -1,0 +1,11 @@
+#N canvas 618 77 309 181 10;
+#X obj 59 11 loadbang;
+#X msg 118 81 reset;
+#X obj 59 45 t b b;
+#X msg 51 75 lighting 1;
+#X obj 88 119 gemwin;
+#X connect 0 0 2 0;
+#X connect 1 0 4 0;
+#X connect 2 0 3 0;
+#X connect 2 1 1 0;
+#X connect 3 0 4 0;

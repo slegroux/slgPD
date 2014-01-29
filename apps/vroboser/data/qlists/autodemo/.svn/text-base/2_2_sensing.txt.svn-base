@@ -1,0 +1,17 @@
+all-off bang;
+comment start sample;
+awasample 2;
+outerspace-preset 1;
+outerspace-volume 0.7;
+outerspace-onoff 1;
+30000 additive-onoff 1;
+comment second 30;
+additive-volume 60;
+additive-transpose -5;
+10000 additive-transpose 0;
+comment second 40;
+3000 additive-transpose -3;
+comment second 43;
+comment 14000 outerspace-onoff 1;
+comment second 57;
+comment additive-onoff 0;

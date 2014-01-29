@@ -1,0 +1,4 @@
+comment ---- spatialization positioning---;
+all-off bang;
+awasample 6;
+4000 nrginteract-onoff 1;
