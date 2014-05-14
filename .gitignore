@@ -1,0 +1,11 @@
+*.pd_linux
+*.pd_darwin
+*.d_fat
+*.d_fat_o
+Musebot.app/
+addons/
+media/
+pd-leftovers/
+scofo/
+data.zip
+.svn/

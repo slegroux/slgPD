@@ -1,0 +1,888 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+^WebResourceURL_WebResourceTextEncodingName_WebResourceMIMEType_WebResourceData_WebResourceFrameName_.http://midistudio.com/Help/GMSpecs_Patches.htmUUTF-8Ytext/htmlO0ß<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en" ""><!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en" ""><html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Les. Gorven">
+   <meta name="Description" content="General MIDI Standards: Instrument Patch Map">
+   <meta name="Distribution" content="global">
+   <meta name="rating" content="General">
+   <meta name="revisit-after" content="10 days">
+   <meta name="ROBOTS" content="ALL">
+   <meta name="Keywords" content="MIDI, MIDI Help, General MIDI, patches, http://midistudio.com">
+   <meta name="GENERATOR" content="Mozilla/4.78 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>General MIDI Standards: Table 1 - Instrument Patch Map</title>
+</head><body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#999999" alink="#FF0000" background="../images/notes_bg.gif">
+
+<center>
+<h2>
+<font face="Verdana, Arial, Helvetica">General MIDI Standards</font></h2></center>
+
+<center><table border="0" cellspacing="0" cellpadding="4" cols="1" width="544">
+<tbody><tr>
+<td>
+<center><b><font face="Verdana, Arial, Helvetica"><font size="+1">TABLE 1Â 
+-Â  General MIDI Instrument Patch Map</font></font></b></center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center><font face="Arial,Helvetica">(groups sounds into sixteen families,
+with 8 instruments in each family)</font></center>
+</td>
+</tr>
+</tbody></table></center>
+
+<center><table border="0" cellspacing="0" cellpadding="2" width="544">
+<tbody><tr>
+<td width="9%"><b><font face="Arial,Helvetica"><font size="-1">Prog#</font></font></b></td>
+
+<td width="41%"><b><font face="Verdana,Helvetica,Arial"><font size="-1">INSTRUMENT</font></font></b></td>
+
+<td width="9%"><b><font face="Arial,Helvetica"><font size="-1">Prog#</font></font></b></td>
+
+<td width="41%"><b><font face="Verdana,Helvetica,Arial"><font size="-1">INSTRUMENT</font></font></b></td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td><b><tt>1-8 PIANO</tt></b></td>
+
+<td>Â </td>
+
+<td><b><tt>9-16 CHROMATIC PERCUSSION</tt></b></td>
+</tr>
+
+<tr>
+<td><tt>1</tt></td>
+
+<td><tt>Acoustic Grand</tt></td>
+
+<td><tt>9</tt></td>
+
+<td><tt>Celesta</tt></td>
+</tr>
+
+<tr>
+<td><tt>2</tt></td>
+
+<td><tt>Bright Acoustic</tt></td>
+
+<td><tt>10</tt></td>
+
+<td><tt>Glockenspiel</tt></td>
+</tr>
+
+<tr>
+<td><tt>3</tt></td>
+
+<td><tt>Electric Grand</tt></td>
+
+<td><tt>11</tt></td>
+
+<td><tt>Music Box</tt></td>
+</tr>
+
+<tr>
+<td><tt>4</tt></td>
+
+<td><tt>Honky-Tonk</tt></td>
+
+<td><tt>12</tt></td>
+
+<td><tt>Vibraphone</tt></td>
+</tr>
+
+<tr>
+<td><tt>5</tt></td>
+
+<td><tt>Electric Piano 1</tt></td>
+
+<td><tt>13</tt></td>
+
+<td><tt>Marimba</tt></td>
+</tr>
+
+<tr>
+<td><tt>6</tt></td>
+
+<td><tt>Electric Piano 2</tt></td>
+
+<td><tt>14</tt></td>
+
+<td><tt>Xylophone</tt></td>
+</tr>
+
+<tr>
+<td><tt>7</tt></td>
+
+<td><tt>Harpsichord</tt></td>
+
+<td><tt>15</tt></td>
+
+<td><tt>Tubular Bells</tt></td>
+</tr>
+
+<tr>
+<td><tt>8</tt></td>
+
+<td><tt>Clav</tt></td>
+
+<td><tt>16</tt></td>
+
+<td><tt>Dulcimer</tt></td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td><b><tt>17-24 ORGAN</tt></b></td>
+
+<td>Â </td>
+
+<td><b><tt>25-32 GUITAR</tt></b></td>
+</tr>
+
+<tr>
+<td><tt>17</tt></td>
+
+<td><tt>Drawbar Organ</tt></td>
+
+<td><tt>25</tt></td>
+
+<td><tt>Acoustic Guitar(nylon)</tt></td>
+</tr>
+
+<tr>
+<td><tt>18</tt></td>
+
+<td><tt>Percussive Organ</tt></td>
+
+<td><tt>26</tt></td>
+
+<td><tt>Acoustic Guitar(steel)</tt></td>
+</tr>
+
+<tr>
+<td><tt>19</tt></td>
+
+<td><tt>Rock Organ</tt></td>
+
+<td><tt>27</tt></td>
+
+<td><tt>Electric Guitar(jazz)</tt></td>
+</tr>
+
+<tr>
+<td><tt>20</tt></td>
+
+<td><tt>Church Organ</tt></td>
+
+<td><tt>28</tt></td>
+
+<td><tt>Electric Guitar(clean)</tt></td>
+</tr>
+
+<tr>
+<td><tt>21</tt></td>
+
+<td><tt>Reed Organ</tt></td>
+
+<td><tt>29</tt></td>
+
+<td><tt>Electric Guitar(muted)</tt></td>
+</tr>
+
+<tr>
+<td><tt>22</tt></td>
+
+<td><tt>Accoridan</tt></td>
+
+<td><tt>30</tt></td>
+
+<td><tt>Overdriven Guitar</tt></td>
+</tr>
+
+<tr>
+<td><tt>23</tt></td>
+
+<td><tt>Harmonica</tt></td>
+
+<td><tt>31</tt></td>
+
+<td><tt>Distortion Guitar</tt></td>
+</tr>
+
+<tr>
+<td><tt>24</tt></td>
+
+<td><tt>Tango Accordian</tt></td>
+
+<td><tt>32</tt></td>
+
+<td><tt>Guitar Harmonics</tt></td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td><b><tt>33-40 BASS</tt></b></td>
+
+<td>Â </td>
+
+<td><b><tt>41-48 STRINGS</tt></b></td>
+</tr>
+
+<tr>
+<td><tt>33</tt></td>
+
+<td><tt>Acoustic Bass</tt></td>
+
+<td><tt>41</tt></td>
+
+<td><tt>Violin</tt></td>
+</tr>
+
+<tr>
+<td><tt>34</tt></td>
+
+<td><tt>Electric Bass(finger)</tt></td>
+
+<td><tt>42</tt></td>
+
+<td><tt>Viola</tt></td>
+</tr>
+
+<tr>
+<td><tt>35</tt></td>
+
+<td><tt>Electric Bass(pick)</tt></td>
+
+<td><tt>43</tt></td>
+
+<td><tt>Cello</tt></td>
+</tr>
+
+<tr>
+<td><tt>36</tt></td>
+
+<td><tt>Fretless Bass</tt></td>
+
+<td><tt>44</tt></td>
+
+<td><tt>Contrabass</tt></td>
+</tr>
+
+<tr>
+<td><tt>37</tt></td>
+
+<td><tt>Slap Bass 1</tt></td>
+
+<td><tt>45</tt></td>
+
+<td><tt>Tremolo Strings</tt></td>
+</tr>
+
+<tr>
+<td><tt>38</tt></td>
+
+<td><tt>Slap Bass 2</tt></td>
+
+<td><tt>46</tt></td>
+
+<td><tt>Pizzicato Strings</tt></td>
+</tr>
+
+<tr>
+<td><tt>39</tt></td>
+
+<td><tt>Synth Bass 1</tt></td>
+
+<td><tt>47</tt></td>
+
+<td><tt>Orchestral Strings</tt></td>
+</tr>
+
+<tr>
+<td><tt>40</tt></td>
+
+<td><tt>Synth Bass 2</tt></td>
+
+<td><tt>48</tt></td>
+
+<td><tt>Timpani</tt></td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td><b><tt>49-56 ENSEMBLE</tt></b></td>
+
+<td>Â </td>
+
+<td><b><tt>57-64 BRASS</tt></b></td>
+</tr>
+
+<tr>
+<td><tt>49</tt></td>
+
+<td><tt>String Ensemble 1</tt></td>
+
+<td><tt>57</tt></td>
+
+<td><tt>Trumpet</tt></td>
+</tr>
+
+<tr>
+<td><tt>50</tt></td>
+
+<td><tt>String Ensemble 2</tt></td>
+
+<td><tt>58</tt></td>
+
+<td><tt>Trombone</tt></td>
+</tr>
+
+<tr>
+<td><tt>51</tt></td>
+
+<td><tt>SynthStrings 1</tt></td>
+
+<td><tt>59</tt></td>
+
+<td><tt>Tuba</tt></td>
+</tr>
+
+<tr>
+<td><tt>52</tt></td>
+
+<td><tt>SynthStrings 2</tt></td>
+
+<td><tt>60</tt></td>
+
+<td><tt>Muted Trumpet</tt></td>
+</tr>
+
+<tr>
+<td><tt>53</tt></td>
+
+<td><tt>Choir Aahs</tt></td>
+
+<td><tt>61</tt></td>
+
+<td><tt>French Horn</tt></td>
+</tr>
+
+<tr>
+<td><tt>54</tt></td>
+
+<td><tt>Voice Oohs</tt></td>
+
+<td><tt>62</tt></td>
+
+<td><tt>Brass Section</tt></td>
+</tr>
+
+<tr>
+<td><tt>55</tt></td>
+
+<td><tt>Synth Voice</tt></td>
+
+<td><tt>63</tt></td>
+
+<td><tt>SynthBrass 1</tt></td>
+</tr>
+
+<tr>
+<td><tt>56</tt></td>
+
+<td><tt>Orchestra Hit</tt></td>
+
+<td><tt>64</tt></td>
+
+<td><tt>SynthBrass 2</tt></td>
+</tr>
+</tbody></table></center>
+
+<center><table border="0" cellspacing="0" cellpadding="2" width="544">
+<tbody><tr>
+<td width="9%">Â </td>
+
+<td width="41%"><b><tt>65-72 REED</tt></b></td>
+
+<td width="9%">Â </td>
+
+<td width="41%"><b><tt>73-80 PIPE</tt></b></td>
+</tr>
+
+<tr>
+<td><tt>65</tt></td>
+
+<td><tt>Soprano Sax</tt></td>
+
+<td><tt>73</tt></td>
+
+<td><tt>Piccolo</tt></td>
+</tr>
+
+<tr>
+<td><tt>66</tt></td>
+
+<td><tt>Alto Sax</tt></td>
+
+<td><tt>74</tt></td>
+
+<td><tt>Flute</tt></td>
+</tr>
+
+<tr>
+<td><tt>67</tt></td>
+
+<td><tt>Tenor Sax</tt></td>
+
+<td><tt>75</tt></td>
+
+<td><tt>Recorder</tt></td>
+</tr>
+
+<tr>
+<td><tt>68</tt></td>
+
+<td><tt>Baritone Sax</tt></td>
+
+<td><tt>76</tt></td>
+
+<td><tt>Pan Flute</tt></td>
+</tr>
+
+<tr>
+<td><tt>69</tt></td>
+
+<td><tt>Oboe</tt></td>
+
+<td><tt>77</tt></td>
+
+<td><tt>Blown Bottle</tt></td>
+</tr>
+
+<tr>
+<td><tt>70</tt></td>
+
+<td><tt>English Horn</tt></td>
+
+<td><tt>78</tt></td>
+
+<td><tt>Shakuhachi</tt></td>
+</tr>
+
+<tr>
+<td><tt>71</tt></td>
+
+<td><tt>Bassoon</tt></td>
+
+<td><tt>79</tt></td>
+
+<td><tt>Whistle</tt></td>
+</tr>
+
+<tr>
+<td><tt>72</tt></td>
+
+<td><tt>Clarinet</tt></td>
+
+<td><tt>80</tt></td>
+
+<td><tt>Ocarina</tt></td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td><b><tt>81-88 SYNTH LEADÂ </tt></b></td>
+
+<td>Â </td>
+
+<td><b><tt>89-96 SYNTH PAD</tt></b></td>
+</tr>
+
+<tr>
+<td><tt>81</tt></td>
+
+<td><tt>Lead 1 (square)</tt></td>
+
+<td><tt>89</tt></td>
+
+<td><tt>Pad 1 (new age)</tt></td>
+</tr>
+
+<tr>
+<td><tt>82</tt></td>
+
+<td><tt>Lead 2 (sawtooth)</tt></td>
+
+<td><tt>90</tt></td>
+
+<td><tt>Pad 2 (warm)</tt></td>
+</tr>
+
+<tr>
+<td><tt>83</tt></td>
+
+<td><tt>Lead 3 (calliope)</tt></td>
+
+<td><tt>91</tt></td>
+
+<td><tt>Pad 3 (polysynth)</tt></td>
+</tr>
+
+<tr>
+<td><tt>84</tt></td>
+
+<td><tt>Lead 4 (chiff)</tt></td>
+
+<td><tt>92</tt></td>
+
+<td><tt>Pad 4 (choir)</tt></td>
+</tr>
+
+<tr>
+<td><tt>85</tt></td>
+
+<td><tt>Lead 5 (charang)</tt></td>
+
+<td><tt>93</tt></td>
+
+<td><tt>Pad 5 (bowed)</tt></td>
+</tr>
+
+<tr>
+<td><tt>86</tt></td>
+
+<td><tt>Lead 6 (voice)</tt></td>
+
+<td><tt>94</tt></td>
+
+<td><tt>Pad 6 (metallic)</tt></td>
+</tr>
+
+<tr>
+<td><tt>87</tt></td>
+
+<td><tt>Lead 7 (fifths)</tt></td>
+
+<td><tt>95</tt></td>
+
+<td><tt>Pad 7 (halo)</tt></td>
+</tr>
+
+<tr>
+<td><tt>88</tt></td>
+
+<td><tt>Lead 8 (bass+lead)</tt></td>
+
+<td><tt>96</tt></td>
+
+<td><tt>Pad 8 (sweep)</tt></td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td><b><tt>97-104 SYNTH EFFECTS</tt></b></td>
+
+<td>Â </td>
+
+<td><b><tt>105-112 ETHNIC</tt></b></td>
+</tr>
+
+<tr>
+<td><tt>97</tt></td>
+
+<td><tt>FX 1 (rain)</tt></td>
+
+<td><tt>105</tt></td>
+
+<td><tt>Sitar</tt></td>
+</tr>
+
+<tr>
+<td><tt>98</tt></td>
+
+<td><tt>FX 2 (soundtrack)</tt></td>
+
+<td><tt>106</tt></td>
+
+<td><tt>Banjo</tt></td>
+</tr>
+
+<tr>
+<td><tt>99</tt></td>
+
+<td><tt>FX 3 (crystal)</tt></td>
+
+<td><tt>107</tt></td>
+
+<td><tt>Shamisen</tt></td>
+</tr>
+
+<tr>
+<td><tt>100</tt></td>
+
+<td><tt>FX 4 (atmosphere)</tt></td>
+
+<td><tt>108</tt></td>
+
+<td><tt>Koto</tt></td>
+</tr>
+
+<tr>
+<td><tt>101</tt></td>
+
+<td><tt>FX 5 (brightness)</tt></td>
+
+<td><tt>109</tt></td>
+
+<td><tt>Kalimba</tt></td>
+</tr>
+
+<tr>
+<td><tt>102</tt></td>
+
+<td><tt>FX 6 (goblins)</tt></td>
+
+<td><tt>110</tt></td>
+
+<td><tt>Bagpipe</tt></td>
+</tr>
+
+<tr>
+<td><tt>103</tt></td>
+
+<td><tt>FX 7 (echoes)</tt></td>
+
+<td><tt>111</tt></td>
+
+<td><tt>Fiddle</tt></td>
+</tr>
+
+<tr>
+<td><tt>104</tt></td>
+
+<td><tt>FX 8 (sci-fi)</tt></td>
+
+<td><tt>112</tt></td>
+
+<td><tt>Shanai</tt></td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+
+<td>Â </td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td><b><tt>113-120 PERCUSSIVE</tt></b></td>
+
+<td>Â </td>
+
+<td><b><tt>121-128 SOUND EFFECTS</tt></b></td>
+</tr>
+
+<tr>
+<td><tt>113</tt></td>
+
+<td><tt>Tinkle Bell</tt></td>
+
+<td><tt>121</tt></td>
+
+<td><tt>Guitar Fret Noise</tt></td>
+</tr>
+
+<tr>
+<td><tt>114</tt></td>
+
+<td><tt>Agogo</tt></td>
+
+<td><tt>122</tt></td>
+
+<td><tt>Breath Noise</tt></td>
+</tr>
+
+<tr>
+<td><tt>115</tt></td>
+
+<td><tt>Steel Drums</tt></td>
+
+<td><tt>123</tt></td>
+
+<td><tt>Seashore</tt></td>
+</tr>
+
+<tr>
+<td><tt>116</tt></td>
+
+<td><tt>Woodblock</tt></td>
+
+<td><tt>124</tt></td>
+
+<td><tt>Bird Tweet</tt></td>
+</tr>
+
+<tr>
+<td><tt>117</tt></td>
+
+<td><tt>Taiko Drum</tt></td>
+
+<td><tt>125</tt></td>
+
+<td><tt>Telephone Ring</tt></td>
+</tr>
+
+<tr>
+<td><tt>118</tt></td>
+
+<td><tt>Melodic TomÂ </tt></td>
+
+<td><tt>126</tt></td>
+
+<td><tt>Helicopter</tt></td>
+</tr>
+
+<tr>
+<td><tt>119</tt></td>
+
+<td><tt>Synth Drum</tt></td>
+
+<td><tt>127</tt></td>
+
+<td><tt>Applause</tt></td>
+</tr>
+
+<tr>
+<td><tt>120</tt></td>
+
+<td><tt>Reverse Cymbal</tt></td>
+
+<td><tt>128</tt></td>
+
+<td><tt>Gunshot</tt></td>
+</tr>
+</tbody></table></center>
+
+<center><table border="0" cellspacing="0" cellpadding="2" width="544">
+<tbody><tr>
+<td><b><font face="Verdana, Helvetica, Arial"><font size="-1">RELATED TOPICS:</font></font></b></td>
+
+<td><b><font face="Verdana, Helvetica, Arial"><font size="-1"><a href="GMSpecs_PercMap.htm">TABLE
+2</a> - GM Percussion Key Map</font></font></b></td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td><b><font face="Verdana, Helvetica, Arial"><font size="-1"><a href="GMSpecs_ModuleMin.htm">TABLE
+3</a> - GM Minimum Sound Module Specifications</font></font></b></td>
+</tr>
+
+<tr>
+<td>Â </td>
+
+<td>Â </td>
+</tr>
+
+<tr>
+<td></td>
+
+<td><b><font face="Verdana, Helvetica, Arial"><a href="../index.htm">Back
+to the Lobby</a> | <a href="Help_Index.htm">Table of Contents</a></font></b></td>
+</tr>
+</tbody></table></center>
+
+<center>
+<hr width="100%">
+<br><font face="Verdana, Helvetica, Arial"><font color="#000000"><font size="-1">Â©1997-2006
+MidiStudio.com. All Rights Reserved</font></font></font>
+<br><font face="Verdana, Helvetica, Arial"><font color="#000000"><font size="-1">Created
+December 22, 1997 - Last Update: January 7, 2006</font></font></font>
+<br><font face="Verdana, Helvetica, Arial"><font color="#000000"><font size="-2">This
+site is owned, designed and produced by Les Gorven</font></font></font>
+<br><font face="Verdana, Helvetica, Arial"><font color="#000000"><font size="-2">dba
+Business Technologies &amp; MIDI Studio Publishing</font></font></font></center>
+
+
+
+</body></html>P¡Ô_WebResourceResponse_)http://midistudio.com/images/notes_bg.gifOÊbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_)http://midistudio.com/images/notes_bg.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¬î«<HÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€]Accept-Ranges\Content-TypeVServer^Content-LengthTDateTEtagZConnection]Last-ModifiedUbytesYimage/gifVApacheT2349_Wed, 10 Sep 2008 01:08:45 GMT_"2673a3-92d-479275f4"Uclose_Sat, 19 Jan 2008 22:13:08 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionary	-Ò./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û Ý ß á ã å ç é ð ø
+6;DORXajls{†ˆ‘“•—™›Ÿ¡ª¬®°²´¶¸ºÈÕÜëðõ %*Jbhˆ‘§´·¼ÀÔ             d              âYimage/gifO	-GIF89a@& ÷     !!!1111œÞ9999œçBBBB”ÎB¥ÞJ¥çRRRR¥ÖZZZZ¥ÎZ­çZµçc”µcœÆc¥Îcµçc½ïkkkk„”k”­k¥ÞkµÞkµçk½çk½÷ssss{„s¥Æs­ÞsµÖs½Þs½çs½ïsÆï{sk{{{{„Œ{Æï{Æ÷{Î÷„„„„”¥„­Æ„Î÷„Îÿ„ÖÿŒŒŒŒ”œŒ­µŒ­½Œ½çŒÖÿ””””­µ”µÆ”½Ö”½Þ”½ç”Æç”Ö÷”Öÿ”Þÿœ½ÞœÆÞœÆçœÆïœÎïœÞÿ¥¥¥¥­µ¥Îï­­œ­­­­Îçµµ¥½½½ÆÆµÆÆÆÎÎ½ÎÎÎÞÞÞïçÖïïïÿ÷çÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,    @&  þ sH0GŒƒW(\èC….\|`ÀÀÁ‡4”(¹Â±£Ç CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8sêÜÉ³§ÏŸ@ƒ
+J´¨Ñ£H“*]Ê´©Ó§P£Â,HaÂ…
+}D„(‘¢EŒ¯dK¶¬Ù³hÓª]Ë¶­Û·pãÊK·®Ý»xóêÝË·¯ß¿€L¸°áÃˆ+^Ì¸±ãÇ#KžL¹²åË˜íR%hÕ*ÖZFœXñbÆRS«^Íºµë×°cËžM»¶íÛ¸sëÞÍ»·o—›v>øyE‰Ð\I=-6³óçÐ£KŸN½ºõëØ³kßÎ½»÷ïàÃþ‹Owóð«XoíÕtØßðãËŸO¿¾ýûøóëßÏ¿¿ÿÿòUuz
+©'ZW¥µy6èàƒF(á„Vhá…f¨á†
+hÐyŸ˜\{9á€(¦¨âŠ,¶èâ‹0Æ(ãŒ4Ö¸’UÂÅcg!"Ç^‚4˜Ø‡Diä‘H&©ä’L6éä“PFùÖ€;vVÂŒ0B[Ñ@ƒr¦	iã˜d–iæ™h¦©æšl¶é¦Pçqf%
+P Ã:\pz:à§zy¢”„jè¡ˆ&ªè¢Œ6êè£‰)ÔYU,€\Ô§žœ^pÑ§ ¦ ª¨.Ð CRPñæª¬¶êê«þ°Æ*ë¬´ÆŠBÉ°À:ôêPL1EÄkl±ÂF¬½ÒàB
+š^”‚ªBjíµØf«í¶Üvëí·ÖÞŠ«p81¬V`¡îºì¶»®ðÆïºèV1:<›QÂVQë¿ ,ðÀlðÁ—PÂB8ÆPÂÄÞ…½VÜ¬—¦Z¬ƒF¿BÁï¹ïÆ‹Eø¦à‚ƒ‚«òÊ,·ìòË0Ç,3ÌW.,iBd …ŸUôçWˆú'~rúç( ‘¨¦*EéZ1…)d„ðÕXg­õÖ\wíõ×Fa¹Í+ „¥5èÐóÏ€Šj€—¤ù\5PPA…xÛ„þ^îé@ÂR‚UÌløáˆ'®øâŒ7î8cb“] –ð@¼¦ÐénÿøÊ'Šd7:íi©š ƒª`·îúë°Ç.ûì´Ç(öØ6G^=,aƒ|Ó ê~ý³ÏÑm·¿™%>QáWoýõØg¯ýöÜ7y»Â
+]ÁÀ[Œ1Æ›ï¬¨°í 
+U£ZºôCAFN°^ûþü÷ïÿÿ   e‚%ð°ÐÁ°ˆ…®ºëìj ½¦'(ÁK(hÀA¨N	P ^÷FHÂšð„(L¡
+ó‚;ðaål ŽEÃbÉÐ]òÙñE<@,þ¢‡HÄ"ñˆ¬jaqD`"Osíc¨B‘R5„ü‚ZºÖU'¸ÀSÓ[¡ÇHÆ2šñŒh¼–†€ g^a›ž¸EãyêV¬¢ð>0ª“…p†^Ä#µHÈBòˆL¤"]ãÂ›áh:p E8HIˆ
+?’›—êv7`áM
+z£ô>¨ƒÜO	"L£*WÉÊVºò•°„ŽÂØxDEàžÌ×9-ç= ±[ªJw<\`cú[¤2—ÉÌf:ó™ËW-7„j2ÁØ|Âz|éž­
+0 %‰öÁTÆòœèL§:×ÉÎsJÓ<ž)¶	&™
+ þ€ @ rf$™Ð¨@JÐ‚”`Žœ¦œâ©y¨žÌa>ó ~ódTh§F7ÊÑŽzô£3‹“-A$Oz’ˆ9%i VªÏ~: £©LgJÓšÚ@TúÐpÒãÐ),l¹B€åÉå	¤HMªR—ÊÔ¦jGªŒÓSÏuó¦XÍªV·ÊÕ®ÞÆC
+QU¹iO§šõ¬hM«Z×º(b5éOQãÕºÚõ®xÍ«^ãÖÆõ¡'*[KØÂö°ˆ­KptÊÐ…”`¬æ^'KÙÊZö²],c»ÈÖ›‰­hGKÚÒvT³›…ëg<;WÌºöµ°­lû‡Z¿b…µ¿­iwËÛÞúö·Ü  ;    1 < K i  ‘ ¨ Ù ß é1Ì1Í1Ï1Ø1î25è5ò                           ?#
